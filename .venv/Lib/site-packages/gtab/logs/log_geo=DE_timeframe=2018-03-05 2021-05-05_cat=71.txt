@@ -1,0 +1,38 @@
+
+2021-10-27 11:09:00.141224
+Start AnchorBank init for region DE in timeframe 2018-03-05 2021-05-05...
+0/568 keyword candidates found in cache, 568 still to check.
+Sampling keywords...
+
+2021-10-27 11:28:49.602848
+Start AnchorBank init for region DE in timeframe 2018-03-05 2021-05-05...
+Full option parameters are: {'BLACKLIST': ['/m/0bcgdv', '/m/04ppcm', '/m/047p8qy'], 'CONN': {'backoff_factor': 0.1, 'proxies': [], 'retries': 5, 'timeout': (25, 25)}, 'GTAB': {'anchor_candidates_file': '550_cities_and_countries.txt', 'num_anchor_candidates': 3500, 'num_anchors': 100, 'seed': 42, 'sleep': 0.5, 'thresh_offline': 10}, 'HITRAFFIC': ['/m/045c7b', 'Google', '/m/02y1vz', 'Facebook', '/m/09jcvs', 'Youtube', '/m/0glpjll', 'Instagram', '/m/0mgkg', 'Amazon', '/m/017rf_', 'Netflix', '/m/019rl6', '/m/0289n8t', '/m/0d07ph', '/m/0b2334', '/m/03vgrr', '/m/010qmszp'], 'PYTRENDS': {'geo': 'DE', 'timeframe': '2018-03-05 2021-05-05', 'cat': '71'}}
+Querying google...
+Loading intermediate query results from /Users/horta/PycharmProjects/GoogleTrendsAnchorBank/gtab/data/internal/google_results/intermediate_google_results_geo=DE_timeframe=2018-03-05 2021-05-05_cat=71.pkl.
+Removing bad queries...
+Diagnostics done!
+A total of 15 bad keywords removed.
+Saving google results as '/Users/horta/PycharmProjects/GoogleTrendsAnchorBank/gtab/data/internal/google_results/google_results_geo=DE_timeframe=2018-03-05 2021-05-05_cat=71.pkl'...
+Total queries (groups of 5 keywords): 83
+Finding paths...
+Paths done!
+Err: 1.1102230246251565e-15
+Querying pairs...
+Total range: 0.0010616572799999999
+Saving anchorbank as '/Users/horta/PycharmProjects/GoogleTrendsAnchorBank/gtab/output/google_anchorbanks/google_anchorbank_geo=DE_timeframe=2018-03-05 2021-05-05_cat=71.tsv'...
+AnchorBank init done.
+
+2021-10-27 11:29:42.161466
+Using /Users/horta/PycharmProjects/GoogleTrendsAnchorBank/gtab/output/google_anchorbanks/google_anchorbank_geo=DE_timeframe=2018-03-05 2021-05-05_cat=71.tsv
+New query 'Santa claus'
+New query calibrated!
+
+2021-10-27 11:29:51.633976
+Using /Users/horta/PycharmProjects/GoogleTrendsAnchorBank/gtab/output/google_anchorbanks/google_anchorbank_geo=DE_timeframe=2018-03-05 2021-05-05_cat=71.tsv
+New query 'Christmas'
+New query calibrated!
+
+2021-10-27 11:30:04.291577
+Using /Users/horta/PycharmProjects/GoogleTrendsAnchorBank/gtab/output/google_anchorbanks/google_anchorbank_geo=DE_timeframe=2018-03-05 2021-05-05_cat=71.tsv
+New query 'Christmas'
+New query calibrated!

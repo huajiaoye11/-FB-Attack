@@ -82,7 +82,7 @@ class KeywordExtractor:
         for row_tuple in tqdm.tqdm(iterable=dframe.itertuples(), total=len(dframe)):
             temp_freq_dist = KeywordExtractor.get_voc_from_one_email(row_tuple.mail_body, freq=True)
             freq_dict[row_tuple.filename] = []             
-            for word, freq in temp_freq_dist.items():                 
+            for word, freq in temp_freq_dist.items():                
                 freq_to_add = 1 if one_occ_per_doc else freq                 
                 freq_dict[row_tuple.filename].append(word)                 
                 try:
@@ -101,7 +101,7 @@ def inter_list(a, b):
     for key1, val1 in a.items():
         if key1 in b.keys():
             count += min(val1, b[key1])
-        return count
+    return count
 def test_data_top(edb_filename, partial_filename, frac1, frac2, word_size=500):
     f1 = open(edb_filename, 'r')
     edb_data = json.load(f1)
@@ -112,7 +112,7 @@ def test_data_top(edb_filename, partial_filename, frac1, frac2, word_size=500):
     edb_keyword = {}
     for tup in edb_sorted[0:word_size]:
         edb_keyword[tup[0]] = {"size": tup[1]["size"], "length": tup[1]["length"]}
-    partial_keyword = {}
+        partial_keyword = {}
     for tup in partial_sorted[0:word_size]:
         partial_keyword[tup[0]] = {"size": tup[1]["size"], "length": tup[1]["length"]}
     count_uni = 0

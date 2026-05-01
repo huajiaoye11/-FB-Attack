@@ -1,27 +1,13 @@
 from multiprocessing import Pool
-import math
 import os
 import pickle
-import numpy
 import numpy as np
 import time
-import multiprocessing
 import pickle
-import email
-import glob
-import mailbox
 import os
 from collections import Counter
-import random
-import pandas as pd
-import nltk
-import tqdm
-import json
-import datetime
-import pytz
-import gtab
 from collections import Counter
-from random import randrange, sample
+from random import sample
 np.set_printoptions(suppress=True)
 
 
@@ -60,9 +46,9 @@ def static_enron_data_info(dataset_name, nkw, n_month, alpha=0.5):
         if month == 13:
             month = 1
             year += 1
-        save_path = '../datasets/' + str(dataset_name)
+        save_path = os.path.join(os.path.dirname(__file__), '..', 'datasets', str(dataset_name))
         with open(save_path + '/' + str(year) + "_" + str(month) + ".pkl", 'rb') as f:
-            dataset, res_dataset_length = pickle.load(f)
+            dataset, _, res_dataset_length = pickle.load(f)
         for doc in dataset:
             for word in set(doc):
                 keywordFrequency[word] += 1

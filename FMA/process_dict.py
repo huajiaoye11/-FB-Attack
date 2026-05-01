@@ -20,7 +20,7 @@ import gtab
 from random import randrange, sample
  
 def load_stem_trends(dataset_name, nkw):
-    pro_dataset_path = "../datasets/trends/" + str(dataset_name) + "_trends_" + str(nkw) + ".pkl"
+    pro_dataset_path = "./datasets/trends/" + str(dataset_name) + "_trends_" + str(nkw) + ".pkl"
     if not os.path.exists(pro_dataset_path):
         raise ValueError("The file {} does not exist".format(pro_dataset_path))
     with open(pro_dataset_path, "rb") as f:
@@ -35,9 +35,9 @@ def remove_n_random_items(lst1, lst2, n):
     return delete_lst1, delete_lst2
 
 def get_size_frompkl(datasetname, year, month, nkw=500):
-    save_path = '../datasets/' + str(datasetname)
+    save_path = 'datasets/' + str(datasetname)
     with open(save_path + '/' + str(year) + "_" + str(month) + ".pkl", 'rb') as f:
-        dataset, res_dataset_length = pickle.load(f)
+        dataset, _, res_dataset_length = pickle.load(f)
     stems, stems_trends = load_stem_trends(datasetname, nkw)
 
     keyword_size = {}
@@ -59,9 +59,9 @@ def get_size_frompkl(datasetname, year, month, nkw=500):
     return keyword_size
 
 def delete_get_size_frompkl(datasetname, year, month, nkw, delete_n):
-    save_path = '../datasets/' + str(datasetname)
+    save_path = 'datasets/' + str(datasetname)
     with open(save_path + '/' + str(year) + "_" + str(month) + ".pkl", 'rb') as f:
-        dataset, res_dataset_length = pickle.load(f)
+        dataset, _, res_dataset_length = pickle.load(f)
     stems, stems_trends = load_stem_trends(datasetname, nkw)
 
     keyword_size = {}

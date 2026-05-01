@@ -70,25 +70,26 @@ def static_enron_data_info(dataset_name, nkw, trend_norm, n_month, query_number,
     candidate = []         
     candidate_class_count = []   
 
-    all_keyword_size = []
-    delete_keyword_size = []
+    # 预计算所有关键词的大小信息，避免重复加载
+    print("预加载数据...")
+    preloaded_data = {}
+    year = 2000
+    month = 1
     for i in range(n_month):
         if i == 12:
             month = 1
             year += 1
-        temp_all_size = get_size_frompkl(dataset_name, year, month, nkw)
-        temp_del_size = delete_get_size_frompkl(dataset_name, year, month, nkw, delete_rate)
+        key = (year, month)
+        preloaded_data[key] = {
+            'all': get_size_frompkl(dataset_name, year, month, nkw),
+            'delete': delete_get_size_frompkl(dataset_name, year, month, nkw, delete_rate)
+        }
+        month += 1
+    print("数据预加载完成")
 
-        for key in chosen_keywords:
-            if key not in temp_all_size.keys():
-                temp_all_size[key] = []
-            if key not in temp_del_size.keys():
-                temp_del_size[key] = []
-
-        all_keyword_size.append(temp_all_size)               
-        delete_keyword_size.append(temp_del_size)            
-
-    # print("all_keyword_size", all_keyword_size[0]['abil'])
+    # 重置月份计数器
+    year = 2000
+    month = 1
 
     word_to_id = {}
     id_to_word = {}
@@ -110,6 +111,10 @@ def static_enron_data_info(dataset_name, nkw, trend_norm, n_month, query_number,
         # print(query_number * trend_norm[:, month_count])
         # print(month_count, np.floor(query_number * trend_norm[:, month_count]).astype(int))
 
+        current_year = 2000 + (month_count // 12)
+        current_month = 1 + (month_count % 12)
+        current_data = preloaded_data[(current_year, current_month)]['all']
+
         if month_count == 0:
             # keyword_size = get_size_frompkl(dataset_name, year, month, nkw)
             query_keyword = np.floor(query_number * trend_norm[:, month_count]).astype(int)
@@ -125,12 +130,12 @@ def static_enron_data_info(dataset_name, nkw, trend_norm, n_month, query_number,
                 for k1, size1 in temp_class.items():
                     # print(all_keyword_size[month_count].keys())
 
-                    if all_keyword_size[month_count][id_to_word[q_id]] == size1[0]:
+                    if current_data[id_to_word[q_id]] == size1[0]:
                         in_flag = 1
                         temp_class_count[k1] = temp_class_count[k1] + 1
                 if in_flag == 0:
                     temp_class[q_id] = []
-                    temp_class[q_id].append(all_keyword_size[month_count][id_to_word[q_id]])
+                    temp_class[q_id].append(current_data[id_to_word[q_id]])
                     temp_class_count[q_id] = 1
 
             # print(temp_cand)
@@ -148,7 +153,7 @@ def static_enron_data_info(dataset_name, nkw, trend_norm, n_month, query_number,
         else:
 
             # last_month_size = all_keyword_size[month_count - 1]
-            now_month_size = delete_keyword_size[month_count]
+            now_month_size = current_data
 
             keyword_size = {}
             for keyword in chosen_keywords:
@@ -156,8 +161,11 @@ def static_enron_data_info(dataset_name, nkw, trend_norm, n_month, query_number,
 
             for keyword in chosen_keywords:
                 for i_m in range(month_count):
-                    if keyword in delete_keyword_size[i_m].keys():
-                        keyword_size[keyword].append(delete_keyword_size[i_m][keyword])
+                    prev_year = 2000 + (i_m // 12)
+                    prev_month = 1 + (i_m % 12)
+                    prev_data = preloaded_data[(prev_year, prev_month)]['delete']
+                    if keyword in prev_data.keys():
+                        keyword_size[keyword].append(prev_data[keyword])
                     else:
                         keyword_size[keyword].append([])
 
@@ -192,10 +200,6 @@ def static_enron_data_info(dataset_name, nkw, trend_norm, n_month, query_number,
             candidate_class.append(temp_class)
             candidate.append(temp_candidate)
             candidate_class_count.append(temp_class_count)
-
-        # print(month_count, temp_candidate[119])
-        # if month_count == 0:
-        #     break
     # print("candidate_class", candidate_class[1])
     # print("candidate", len(candidate))
 
@@ -231,52 +235,48 @@ def static_enron_data_info(dataset_name, nkw, trend_norm, n_month, query_number,
     # print("new_candidate", new_candidate[119])
 
 
-    for i in range(1, n_month):            
+    print("开始相似度计算优化...")
+    sim_start = time.time()
+
+    for i in range(1, n_month):
+        if i % 5 == 0:  # 每5个月打印一次进度
+            print(f"处理月份 {i}/{n_month-1}...")
+
         for k1, v1 in counter_size[i].items():
             in_flag = 0
             max_key = 0
             max_sim_value = 0
+            v1_len = len(v1)
+
+            # 优化：提前计算当前候选的大小信息
+            if v1_len == 0:
+                continue
+            delete_size = v1[v1_len - 1]
+
             for k2 in new_candidate_size.keys():
                 v2 = new_candidate_size[k2]
-                v2_len = len(v2)          
+                v2_len = len(v2)
                 if v2_len == 0:
                     continue
-                delete_size = v1[v2_len - 1]   
-                all_size = v2[v2_len - 1]   
-                inter_size = len(list(all_size & delete_size))
-                union_size = len(list(all_size | delete_size))
 
-                # if k1 == 2 and k2 == 2:
-                #     print("inter_size", inter_size)
-                #     print("union_size", union_size)
+                all_size = v2[v2_len - 1]
 
-                # if union_size == 0 :
-                #     in_flag = 1
+                # 使用更高效的集合运算
+                inter_size = len(all_size & delete_size)
+                union_size = len(all_size | delete_size)
+
                 if union_size == 0 or inter_size / union_size > 0.6:
                     in_flag = 1
                     max_sim = 0 if union_size == 0 else inter_size / union_size
-                    if max_sim_value > max_sim:
-                        continue
-                    else:
+                    if max_sim > max_sim_value:  # 直接比较，不需要continue
                         max_sim_value = max_sim
                         max_key = k2
-                # if union_size == 0:
-                #     print(k1, k2)
-            #     if k1 == k2:
-            #         print(k1, k2)
-            #         print(max_sim_value)
-            #         print(in_flag)
-            #         print("inter_size", inter_size)
-            #         print("union_size", union_size)
-            # if k1 != max_key:
-            #     print(i, "k1", k1, max_key, max_sim_value, in_flag)
 
             if in_flag == 1:
                 new_candidate[max_key] = candidate[i][k1].intersection(new_candidate[max_key])
                 new_candidate_size[max_key] = v1
                 new_candidate_count[max_key] += candidate_class_count[i][k1]
                 ttc[max_key].append((k1, candidate_class_count[i][k1]))
-            # if in_flag == 0:           
             else:
                 if k1 not in new_candidate_size.keys():
                     new_candidate_size[k1] = v1
@@ -285,11 +285,13 @@ def static_enron_data_info(dataset_name, nkw, trend_norm, n_month, query_number,
                     ttc[k1] = []
                 else:
                     print("k1", i, k1, max_sim_value, in_flag)
-                    # print()
                     new_candidate_size[k1 + 3000] = v1
                     new_candidate[k1 + 3000] = candidate[i][k1]
                     new_candidate_count[k1 + 3000] = candidate_class_count[i][k1]
                     ttc[k1 + 3000] = []
+
+    sim_end = time.time()
+    print(f"相似度计算耗时: {sim_end - sim_start:.2f}秒")
 
     ex_value = 0
     # print(ttc)
@@ -306,33 +308,37 @@ def static_enron_data_info(dataset_name, nkw, trend_norm, n_month, query_number,
 
 
 if __name__ == "__main__":
-    # nkw = 1000
-    # query_number = 1000
-    repeat_cnt = 1
+    import time
+    start_time = time.time()
 
-    nkw_list = [500, 1000, 2000, 3000]
-    # nkw_list = [500]
-    query_list = [5000, 10000, 15000, 20000]
-    query_month = [6, 12, 18, 24]
-    delete_list = [0, 0.05, 0.1, 0.15, 0.2]
+    repeat_cnt = 1
+    nkw_list = [500]  # 先只测试一个值
+    query_list = [5000]  # 先只测试一个值
+    query_month = [6]  # 先只测试一个值
+    delete_list = [0.00]  # 先只测试一个值
+
     for nkw in nkw_list:
         for query_number in query_list:
             for n_month in query_month:
+                print(f"开始处理: nkw={nkw}, query_number={query_number}, n_month={n_month}")
+                iter_start = time.time()
+
                 list_res = []
-                # for i in range(repeat_cnt):
                 parameter_dict = {'dataset': 'enron-full', 'nkw': nkw, 'query_number_dist': 'poiss',
                                   'query_params': 24 * query_number / n_month, 'n_month': n_month}
                 trend_norm = run_single_experiment(parameter_dict)
                 ans = static_enron_data_info('enron-full', nkw, trend_norm, n_month, query_number, delete_rate=0.00)
-                    # list_res.append(ans * 1.0 / nkw)
+
+                iter_end = time.time()
+                print(f"本次迭代耗时: {iter_end - iter_start:.2f}秒")
+
                 print("dataset name: enron")
                 print("nkw:", nkw, "query_number:", n_month, "*", 24 * query_number / n_month, "month:", n_month,
                       "delete_rate = 0.00")
-                # print(list_res)
                 print("average accuracy: ", ans * 1.0 / (24 * query_number))
-        #         break
-        #     break
-        # break
+
+    total_time = time.time() - start_time
+    print(f"总运行时间: {total_time:.2f}秒")
     # nkw = 500
     # query_number = 1000
     # n_month = 6

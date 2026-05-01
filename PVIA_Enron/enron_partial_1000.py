@@ -126,6 +126,6 @@ frac1 = [0.9, 0.8, 0.7, 0.6, 0.5]
 frac2 = [0.9, 0.8, 0.7]
 for i in frac1:
     for j in frac2:
-        filename1 = './edb/' + str(i) + '.json'
-        filename2 = './partial/' + str(j) + '.json'
+        filename1 = './PVIA_Enron/edb/' + str(i) + '.json'
+        filename2 = './PVIA_Enron/partial/' + str(j) + '.json'
         test_data_top(filename1, filename2, i, j, 1000)

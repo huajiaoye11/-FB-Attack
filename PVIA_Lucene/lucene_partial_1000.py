@@ -101,7 +101,7 @@ def inter_list(a, b):
     for key1, val1 in a.items():
         if key1 in b.keys():
             count += min(val1, b[key1])
-            return count
+    return count
 def test_data_top(edb_filename, partial_filename, frac1, frac2, word_size=500):
     f1 = open(edb_filename, 'r')
     edb_data = json.load(f1)
@@ -115,7 +115,7 @@ def test_data_top(edb_filename, partial_filename, frac1, frac2, word_size=500):
         partial_keyword = {}
     for tup in partial_sorted[0:word_size]:
         partial_keyword[tup[0]] = {"size": tup[1]["size"], "length": tup[1]["length"]}
-        count_uni = 0
+    count_uni = 0
     for ed_key, ed_value in tqdm.tqdm(edb_keyword.items()):
         count_in = 0
         for par_key, par_value in partial_keyword.items():

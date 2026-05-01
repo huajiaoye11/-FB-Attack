@@ -1,0 +1,13 @@
+[console_scripts]
+gtab-create = gtab.command_line:create_gtab
+gtab-delete = gtab.command_line:delete_gtab
+gtab-init = gtab.command_line:init_dir
+gtab-list = gtab.command_line:list_gtabs
+gtab-print-options = gtab.command_line:print_options
+gtab-query = gtab.command_line:new_query
+gtab-rename = gtab.command_line:rename_gtab
+gtab-set-active = gtab.command_line:set_active_gtab
+gtab-set-blacklist = gtab.command_line:set_blacklist
+gtab-set-hitraffic = gtab.command_line:set_hitraffic
+gtab-set-options = gtab.command_line:set_options
+

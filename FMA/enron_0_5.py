@@ -26,7 +26,7 @@ np.set_printoptions(suppress=True)
 
 
 def load_sent_mail_contents(dataset_name, year=1999, month=1):
-    pro_dataset_path = "../datasets/" + str(dataset_name) + str(year) + "_" + str(month) + ".pkl"
+    pro_dataset_path = "./datasets/" + str(dataset_name) + str(year) + "_" + str(month) + ".pkl"
     if not os.path.exists(pro_dataset_path):
         raise ValueError("The file {} does not exist".format(pro_dataset_path))
     with open(pro_dataset_path, "rb") as f:
@@ -35,7 +35,7 @@ def load_sent_mail_contents(dataset_name, year=1999, month=1):
 
 
 def load_stem_trends(dataset_name, nkw):
-    pro_dataset_path = "../datasets/trends/" + str(dataset_name) + "_trends_" + str(nkw) + ".pkl"
+    pro_dataset_path = "./datasets/trends/" + str(dataset_name) + "_trends_" + str(nkw) + ".pkl"
     if not os.path.exists(pro_dataset_path):
         raise ValueError("The file {} does not exist".format(pro_dataset_path))
     with open(pro_dataset_path, "rb") as f:

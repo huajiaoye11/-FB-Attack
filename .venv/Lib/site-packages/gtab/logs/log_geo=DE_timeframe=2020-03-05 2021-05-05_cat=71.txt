@@ -1,0 +1,155 @@
+
+2021-10-26 14:01:29.096332
+Start AnchorBank init for region DE in timeframe 2020-03-05 2021-05-05...
+0/568 keyword candidates found in cache, 568 still to check.
+Sampling keywords...
+
+2021-10-26 13:56:27.239180
+Start AnchorBank init for region DE in timeframe 2020-03-05 2021-05-05...
+0/568 keyword candidates found in cache, 568 still to check.
+Sampling keywords...
+
+Bad keyword '/m/0fjfh', because The request failed: Google returned a response with code 400.
+
+Bad keyword '/m/013v0m', because The request failed: Google returned a response with code 400.
+
+Bad keyword '/m/02nm6c', because The request failed: Google returned a response with code 400.
+
+Bad keyword '/m/084cz', because The request failed: Google returned a response with code 400.
+
+Bad keyword '/m/0k0mp', because The request failed: Google returned a response with code 400.
+
+Bad keyword '/m/01bp2v', because The request failed: Google returned a response with code 400.
+
+2021-10-26 14:02:02.114844
+Start AnchorBank init for region DE in timeframe 2020-03-05 2021-05-05...
+0/568 keyword candidates found in cache, 568 still to check.
+Sampling keywords...
+
+Bad keyword '/m/02nm75', because The request failed: Google returned a response with code 400.
+
+Bad keyword '/m/02492f', because The request failed: Google returned a response with code 400.
+
+Bad keyword '/m/02nnr7', because The request failed: Google returned a response with code 400.
+
+Bad keyword '/m/027xmcf', because The request failed: Google returned a response with code 400.
+
+Bad keyword '/m/01tf9x', because The request failed: Google returned a response with code 400.
+
+Bad keyword '/m/06jkfv', because The request failed: Google returned a response with code 400.
+
+Bad keyword '/m/08zgs3', because The request failed: Google returned a response with code 400.
+
+Bad keyword '/m/05c353', because The request failed: Google returned a response with code 400.
+
+Bad keyword '/m/05hxz3p', because The request failed: Google returned a response with code 400.
+
+Bad keyword '/m/05b6sck', because The request failed: Google returned a response with code 400.
+
+Bad keyword '/m/07pbfj', because The request failed: Google returned a response with code 400.
+
+Bad keyword '/m/05n1l9l', because The request failed: Google returned a response with code 400.
+
+Bad keyword '/m/09k6_2q', because The request failed: Google returned a response with code 400.
+
+Bad keyword '/m/04rc3w', because The request failed: Google returned a response with code 400.
+
+Bad keyword '/m/05lv45q', because The request failed: Google returned a response with code 400.
+
+Bad keyword '/m/062p8x', because The request failed: Google returned a response with code 400.
+
+Bad keyword '/m/02z7pvc', because The request failed: Google returned a response with code 400.
+
+Bad keyword '/m/05n7yn8', because The request failed: Google returned a response with code 400.
+
+Bad keyword '/m/0603bw', because The request failed: Google returned a response with code 400.
+
+Bad keyword '/m/07706q7', because The request failed: Google returned a response with code 400.
+
+Bad keyword '/m/083tpm', because The request failed: Google returned a response with code 400.
+
+Bad keyword '/m/06srnc', because The request failed: Google returned a response with code 400.
+
+Bad keyword '/m/05n991j', because The request failed: Google returned a response with code 400.
+
+Bad keyword '/m/07b2rg', because The request failed: Google returned a response with code 400.
+
+Bad keyword '/m/060vzr', because The request failed: Google returned a response with code 400.
+
+Bad keyword '/m/0frxjc', because The request failed: Google returned a response with code 400.
+
+Bad keyword '/m/0cmbzt0', because The request failed: Google returned a response with code 400.
+
+Bad keyword '/m/05v67qk', because The request failed: Google returned a response with code 400.
+
+Bad keyword '/m/0bjpvy', because The request failed: Google returned a response with code 400.
+
+Bad keyword '/m/01q3v6', because The request failed: Google returned a response with code 400.
+Querying google...
+Removing bad queries...
+Diagnostics done!
+A total of 112 bad keywords removed.
+Saving google results as '/Users/horta/PycharmProjects/GoogleTrendsAnchorBank/gtab/data/internal/google_results/google_results_geo=DE_timeframe=2020-03-05 2021-05-05_cat=71.pkl'...
+Total queries (groups of 5 keywords): 364
+Finding paths...
+Paths done!
+Err: 4.6629367034256575e-15
+Querying pairs...
+Total range: 0.0012251995074000004
+Saving anchorbank as '/Users/horta/PycharmProjects/GoogleTrendsAnchorBank/gtab/output/google_anchorbanks/google_anchorbank_geo=DE_timeframe=2020-03-05 2021-05-05_cat=71.tsv'...
+AnchorBank init done.
+
+2021-10-26 14:28:01.517866
+Using /Users/horta/PycharmProjects/GoogleTrendsAnchorBank/gtab/output/google_anchorbanks/google_anchorbank_geo=_timeframe=2019-01-01 2020-08-01.tsv
+New query '/m/F01yvs'
+
+Bad keyword '/m/F01yvs', because The request failed: Google returned a response with code 400.
+Keyword /m/F01yvs is bad!
+
+2021-10-26 14:28:14.660452
+Using /Users/horta/PycharmProjects/GoogleTrendsAnchorBank/gtab/output/google_anchorbanks/google_anchorbank_geo=_timeframe=2019-01-01 2020-08-01.tsv
+New query '/m/01yvs'
+New query calibrated!
+
+2021-10-26 14:28:20.033553
+Using /Users/horta/PycharmProjects/GoogleTrendsAnchorBank/gtab/output/google_anchorbanks/google_anchorbank_geo=_timeframe=2019-01-01 2020-08-01.tsv
+New query '/m/01yvs'
+New query calibrated!
+
+2021-10-26 14:29:32.490915
+Using /Users/horta/PycharmProjects/GoogleTrendsAnchorBank/gtab/output/google_anchorbanks/google_anchorbank_geo=_timeframe=2019-01-01 2020-08-01.tsv
+New query '/m/06ckgt'
+Could not calibrate. Time series for query too low everywhere.
+
+2021-10-26 14:29:49.145432
+Using /Users/horta/PycharmProjects/GoogleTrendsAnchorBank/gtab/output/google_anchorbanks/google_anchorbank_geo=_timeframe=2019-01-01 2020-08-01.tsv
+New query '/m/01yvs'
+New query calibrated!
+
+2021-10-26 14:32:40.147877
+Using /Users/horta/PycharmProjects/GoogleTrendsAnchorBank/gtab/output/google_anchorbanks/google_anchorbank_geo=_timeframe=2019-01-01 2020-08-01.tsv
+New query '/m/020vl'
+New query calibrated!
+
+2021-10-26 14:33:57.042465
+Using /Users/horta/PycharmProjects/GoogleTrendsAnchorBank/gtab/output/google_anchorbanks/google_anchorbank_geo=DE_timeframe=2020-03-05 2021-05-05_cat=71.tsv
+New query '/m/01yvs'
+New query calibrated!
+
+2021-10-26 14:34:22.014959
+Using /Users/horta/PycharmProjects/GoogleTrendsAnchorBank/gtab/output/google_anchorbanks/google_anchorbank_geo=DE_timeframe=2020-03-05 2021-05-05_cat=71.tsv
+New query '/m/06ckgt'
+New query calibrated!
+
+2021-10-26 14:40:07.606171
+Using /Users/horta/PycharmProjects/GoogleTrendsAnchorBank/gtab/output/google_anchorbanks/google_anchorbank_geo=DE_timeframe=2020-03-05 2021-05-05_cat=71.tsv
+New query 'Google'
+New query calibrated!
+
+2021-10-27 11:08:36.225747
+Start AnchorBank init for region DE in timeframe 2020-03-05 2021-05-05...
+
+2021-10-27 11:32:30.258361
+Using /Users/horta/PycharmProjects/GoogleTrendsAnchorBank/gtab/output/google_anchorbanks/google_anchorbank_geo=DE_timeframe=2020-03-05 2021-05-05_cat=71.tsv
+New query 'Google'
+New query calibrated!
