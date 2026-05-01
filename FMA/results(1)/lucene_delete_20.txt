@@ -1,7 +1,7 @@
-correct query 24593
+correct query 24860
 dataset name: lucene
-nkw: 500 query_number: 6 * 20000.0 month: 6 delete_rate = 0.20
-average accuracy: 0.20494166666666666
+nkw: 500 query_number: 6 * 20000.0 month: 6 delete_rate = 0.00
+average accuracy:  0.20716666666666667
 correct query 53693
 dataset name: lucene
 nkw: 500 query_number: 12 * 10000.0 month: 12 delete_rate = 0.20
