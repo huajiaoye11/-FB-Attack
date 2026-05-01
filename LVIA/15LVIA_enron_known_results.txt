@@ -1,0 +1,41 @@
+time:  10535.312285940143  s
+nkw:  500 n_month:  18 # intervals:  1
+average accuracy:  0.782000 , std:  0.000000
+nkw:  500 n_month:  6 # intervals:  3
+average accuracy:  0.998000 , std:  0.000000
+nkw:  500 n_month:  3 # intervals:  6
+average accuracy:  0.994000 , std:  0.000000
+nkw:  500 n_month:  2 # intervals:  9
+average accuracy:  1.000000 , std:  0.000000
+nkw:  500 n_month:  1 # intervals:  18
+average accuracy:  1.000000 , std:  0.000000
+nkw:  1000 n_month:  18 # intervals:  1
+average accuracy:  0.569000 , std:  0.000000
+nkw:  1000 n_month:  6 # intervals:  3
+average accuracy:  0.996000 , std:  0.000000
+nkw:  1000 n_month:  3 # intervals:  6
+average accuracy:  1.000000 , std:  0.000000
+nkw:  1000 n_month:  2 # intervals:  9
+average accuracy:  1.000000 , std:  0.000000
+nkw:  1000 n_month:  1 # intervals:  18
+average accuracy:  1.000000 , std:  0.000000
+nkw:  2000 n_month:  18 # intervals:  1
+average accuracy:  0.336500 , std:  0.000000
+nkw:  2000 n_month:  6 # intervals:  3
+average accuracy:  1.000000 , std:  0.000000
+nkw:  2000 n_month:  3 # intervals:  6
+average accuracy:  0.997500 , std:  0.000000
+nkw:  2000 n_month:  2 # intervals:  9
+average accuracy:  0.998500 , std:  0.000000
+nkw:  2000 n_month:  1 # intervals:  18
+average accuracy:  1.000000 , std:  0.000000
+nkw:  3000 n_month:  18 # intervals:  1
+average accuracy:  0.234000 , std:  0.000000
+nkw:  3000 n_month:  6 # intervals:  3
+average accuracy:  0.994000 , std:  0.000000
+nkw:  3000 n_month:  3 # intervals:  6
+average accuracy:  1.000000 , std:  0.000000
+nkw:  3000 n_month:  2 # intervals:  9
+average accuracy:  1.000000 , std:  0.000000
+nkw:  3000 n_month:  1 # intervals:  18
+average accuracy:  0.998333 , std:  0.000000

@@ -1,0 +1,325 @@
+time:  20242.39574293569  s
+dataset_name:  enron-full
+alpha:  0.4 nkw:  500 n_month:  18 # intervals:  1
+average accuracy:  0.079688 , std:  0.010003
+alpha:  0.3 nkw:  500 n_month:  18 # intervals:  1
+average accuracy:  0.062875 , std:  0.016132
+alpha:  0.2 nkw:  500 n_month:  18 # intervals:  1
+average accuracy:  0.056438 , std:  0.019075
+alpha:  0.1 nkw:  500 n_month:  18 # intervals:  1
+average accuracy:  0.059062 , std:  0.015715
+alpha:  0.4 nkw:  500 n_month:  6 # intervals:  3
+average accuracy:  0.171750 , std:  0.021939
+alpha:  0.3 nkw:  500 n_month:  6 # intervals:  3
+average accuracy:  0.154688 , std:  0.015830
+alpha:  0.2 nkw:  500 n_month:  6 # intervals:  3
+average accuracy:  0.117750 , std:  0.017897
+alpha:  0.1 nkw:  500 n_month:  6 # intervals:  3
+average accuracy:  0.101437 , std:  0.017246
+alpha:  0.4 nkw:  500 n_month:  3 # intervals:  6
+average accuracy:  0.224500 , std:  0.020608
+alpha:  0.3 nkw:  500 n_month:  3 # intervals:  6
+average accuracy:  0.207937 , std:  0.021715
+alpha:  0.2 nkw:  500 n_month:  3 # intervals:  6
+average accuracy:  0.156688 , std:  0.017470
+alpha:  0.1 nkw:  500 n_month:  3 # intervals:  6
+average accuracy:  0.118438 , std:  0.012804
+alpha:  0.4 nkw:  500 n_month:  2 # intervals:  9
+average accuracy:  0.260625 , std:  0.019252
+alpha:  0.3 nkw:  500 n_month:  2 # intervals:  9
+average accuracy:  0.233250 , std:  0.019803
+alpha:  0.2 nkw:  500 n_month:  2 # intervals:  9
+average accuracy:  0.199563 , std:  0.016638
+alpha:  0.1 nkw:  500 n_month:  2 # intervals:  9
+average accuracy:  0.119562 , std:  0.017512
+alpha:  0.4 nkw:  500 n_month:  1 # intervals:  18
+average accuracy:  0.258188 , std:  0.035445
+alpha:  0.3 nkw:  500 n_month:  1 # intervals:  18
+average accuracy:  0.211688 , std:  0.029312
+alpha:  0.2 nkw:  500 n_month:  1 # intervals:  18
+average accuracy:  0.155125 , std:  0.015253
+alpha:  0.1 nkw:  500 n_month:  1 # intervals:  18
+average accuracy:  0.074375 , std:  0.017311
+alpha:  0.4 nkw:  1000 n_month:  18 # intervals:  1
+average accuracy:  0.042281 , std:  0.008671
+alpha:  0.3 nkw:  1000 n_month:  18 # intervals:  1
+average accuracy:  0.036219 , std:  0.006085
+alpha:  0.2 nkw:  1000 n_month:  18 # intervals:  1
+average accuracy:  0.028563 , std:  0.008107
+alpha:  0.1 nkw:  1000 n_month:  18 # intervals:  1
+average accuracy:  0.030656 , std:  0.006647
+alpha:  0.4 nkw:  1000 n_month:  6 # intervals:  3
+average accuracy:  0.113094 , std:  0.011036
+alpha:  0.3 nkw:  1000 n_month:  6 # intervals:  3
+average accuracy:  0.095125 , std:  0.009562
+alpha:  0.2 nkw:  1000 n_month:  6 # intervals:  3
+average accuracy:  0.086375 , std:  0.017069
+alpha:  0.1 nkw:  1000 n_month:  6 # intervals:  3
+average accuracy:  0.054813 , std:  0.010364
+alpha:  0.4 nkw:  1000 n_month:  3 # intervals:  6
+average accuracy:  0.159156 , std:  0.010988
+alpha:  0.3 nkw:  1000 n_month:  3 # intervals:  6
+average accuracy:  0.146781 , std:  0.010663
+alpha:  0.2 nkw:  1000 n_month:  3 # intervals:  6
+average accuracy:  0.118781 , std:  0.011206
+alpha:  0.1 nkw:  1000 n_month:  3 # intervals:  6
+average accuracy:  0.069375 , std:  0.011300
+alpha:  0.4 nkw:  1000 n_month:  2 # intervals:  9
+average accuracy:  0.204031 , std:  0.018883
+alpha:  0.3 nkw:  1000 n_month:  2 # intervals:  9
+average accuracy:  0.182969 , std:  0.014464
+alpha:  0.2 nkw:  1000 n_month:  2 # intervals:  9
+average accuracy:  0.129031 , std:  0.023829
+alpha:  0.1 nkw:  1000 n_month:  2 # intervals:  9
+average accuracy:  0.060094 , std:  0.016098
+alpha:  0.4 nkw:  1000 n_month:  1 # intervals:  18
+average accuracy:  0.170625 , std:  0.021489
+alpha:  0.3 nkw:  1000 n_month:  1 # intervals:  18
+average accuracy:  0.131719 , std:  0.017278
+alpha:  0.2 nkw:  1000 n_month:  1 # intervals:  18
+average accuracy:  0.100906 , std:  0.013525
+alpha:  0.1 nkw:  1000 n_month:  1 # intervals:  18
+average accuracy:  0.047063 , std:  0.008948
+alpha:  0.4 nkw:  2000 n_month:  18 # intervals:  1
+average accuracy:  0.017781 , std:  0.004545
+alpha:  0.3 nkw:  2000 n_month:  18 # intervals:  1
+average accuracy:  0.018594 , std:  0.005129
+alpha:  0.2 nkw:  2000 n_month:  18 # intervals:  1
+average accuracy:  0.017406 , std:  0.004437
+alpha:  0.1 nkw:  2000 n_month:  18 # intervals:  1
+average accuracy:  0.012438 , std:  0.004208
+alpha:  0.4 nkw:  2000 n_month:  6 # intervals:  3
+average accuracy:  0.071469 , std:  0.008367
+alpha:  0.3 nkw:  2000 n_month:  6 # intervals:  3
+average accuracy:  0.062359 , std:  0.006770
+alpha:  0.2 nkw:  2000 n_month:  6 # intervals:  3
+average accuracy:  0.053406 , std:  0.007177
+alpha:  0.1 nkw:  2000 n_month:  6 # intervals:  3
+average accuracy:  0.036312 , std:  0.005732
+alpha:  0.4 nkw:  2000 n_month:  3 # intervals:  6
+average accuracy:  0.120406 , std:  0.007508
+alpha:  0.3 nkw:  2000 n_month:  3 # intervals:  6
+average accuracy:  0.108922 , std:  0.007151
+alpha:  0.2 nkw:  2000 n_month:  3 # intervals:  6
+average accuracy:  0.084766 , std:  0.008121
+alpha:  0.1 nkw:  2000 n_month:  3 # intervals:  6
+average accuracy:  0.039484 , std:  0.008676
+alpha:  0.4 nkw:  2000 n_month:  2 # intervals:  9
+average accuracy:  0.136281 , std:  0.034971
+alpha:  0.3 nkw:  2000 n_month:  2 # intervals:  9
+average accuracy:  0.092688 , std:  0.031751
+alpha:  0.2 nkw:  2000 n_month:  2 # intervals:  9
+average accuracy:  0.043016 , std:  0.025196
+alpha:  0.1 nkw:  2000 n_month:  2 # intervals:  9
+average accuracy:  0.011719 , std:  0.007527
+alpha:  0.4 nkw:  2000 n_month:  1 # intervals:  18
+average accuracy:  0.067375 , std:  0.044526
+alpha:  0.3 nkw:  2000 n_month:  1 # intervals:  18
+average accuracy:  0.045484 , std:  0.023395
+alpha:  0.2 nkw:  2000 n_month:  1 # intervals:  18
+average accuracy:  0.029016 , std:  0.016400
+alpha:  0.1 nkw:  2000 n_month:  1 # intervals:  18
+average accuracy:  0.012063 , std:  0.009092
+alpha:  0.4 nkw:  3000 n_month:  18 # intervals:  1
+average accuracy:  0.015396 , std:  0.003323
+alpha:  0.3 nkw:  3000 n_month:  18 # intervals:  1
+average accuracy:  0.011490 , std:  0.002846
+alpha:  0.2 nkw:  3000 n_month:  18 # intervals:  1
+average accuracy:  0.010375 , std:  0.002250
+alpha:  0.1 nkw:  3000 n_month:  18 # intervals:  1
+average accuracy:  0.009021 , std:  0.002398
+alpha:  0.4 nkw:  3000 n_month:  6 # intervals:  3
+average accuracy:  0.054823 , std:  0.006322
+alpha:  0.3 nkw:  3000 n_month:  6 # intervals:  3
+average accuracy:  0.042865 , std:  0.005091
+alpha:  0.2 nkw:  3000 n_month:  6 # intervals:  3
+average accuracy:  0.037771 , std:  0.003673
+alpha:  0.1 nkw:  3000 n_month:  6 # intervals:  3
+average accuracy:  0.023479 , std:  0.004562
+alpha:  0.4 nkw:  3000 n_month:  3 # intervals:  6
+average accuracy:  0.097719 , std:  0.006899
+alpha:  0.3 nkw:  3000 n_month:  3 # intervals:  6
+average accuracy:  0.080625 , std:  0.006166
+alpha:  0.2 nkw:  3000 n_month:  3 # intervals:  6
+average accuracy:  0.061052 , std:  0.006997
+alpha:  0.1 nkw:  3000 n_month:  3 # intervals:  6
+average accuracy:  0.033656 , std:  0.005768
+alpha:  0.4 nkw:  3000 n_month:  2 # intervals:  9
+average accuracy:  0.100740 , std:  0.016592
+alpha:  0.3 nkw:  3000 n_month:  2 # intervals:  9
+average accuracy:  0.071417 , std:  0.017540
+alpha:  0.2 nkw:  3000 n_month:  2 # intervals:  9
+average accuracy:  0.041552 , std:  0.013283
+alpha:  0.1 nkw:  3000 n_month:  2 # intervals:  9
+average accuracy:  0.017344 , std:  0.005346
+alpha:  0.4 nkw:  3000 n_month:  1 # intervals:  18
+average accuracy:  0.054646 , std:  0.016989
+alpha:  0.3 nkw:  3000 n_month:  1 # intervals:  18
+average accuracy:  0.045281 , std:  0.014652
+alpha:  0.2 nkw:  3000 n_month:  1 # intervals:  18
+average accuracy:  0.023990 , std:  0.013663
+alpha:  0.1 nkw:  3000 n_month:  1 # intervals:  18
+average accuracy:  0.011448 , std:  0.007428
+
+dataset_name:  lucene
+alpha:  0.4 nkw:  500 n_month:  18 # intervals:  1
+average accuracy:  0.046687 , std:  0.012820
+alpha:  0.3 nkw:  500 n_month:  18 # intervals:  1
+average accuracy:  0.054312 , std:  0.016803
+alpha:  0.2 nkw:  500 n_month:  18 # intervals:  1
+average accuracy:  0.056312 , std:  0.015018
+alpha:  0.1 nkw:  500 n_month:  18 # intervals:  1
+average accuracy:  0.031750 , std:  0.009934
+alpha:  0.4 nkw:  500 n_month:  6 # intervals:  3
+average accuracy:  0.128250 , std:  0.017438
+alpha:  0.3 nkw:  500 n_month:  6 # intervals:  3
+average accuracy:  0.112937 , std:  0.019174
+alpha:  0.2 nkw:  500 n_month:  6 # intervals:  3
+average accuracy:  0.086750 , std:  0.017922
+alpha:  0.1 nkw:  500 n_month:  6 # intervals:  3
+average accuracy:  0.062062 , std:  0.011838
+alpha:  0.4 nkw:  500 n_month:  3 # intervals:  6
+average accuracy:  0.193375 , std:  0.020679
+alpha:  0.3 nkw:  500 n_month:  3 # intervals:  6
+average accuracy:  0.174625 , std:  0.022425
+alpha:  0.2 nkw:  500 n_month:  3 # intervals:  6
+average accuracy:  0.149562 , std:  0.022101
+alpha:  0.1 nkw:  500 n_month:  3 # intervals:  6
+average accuracy:  0.093562 , std:  0.013344
+alpha:  0.4 nkw:  500 n_month:  2 # intervals:  9
+average accuracy:  0.286625 , std:  0.022030
+alpha:  0.3 nkw:  500 n_month:  2 # intervals:  9
+average accuracy:  0.250063 , std:  0.021531
+alpha:  0.2 nkw:  500 n_month:  2 # intervals:  9
+average accuracy:  0.188938 , std:  0.020739
+alpha:  0.1 nkw:  500 n_month:  2 # intervals:  9
+average accuracy:  0.078187 , std:  0.017099
+alpha:  0.4 nkw:  500 n_month:  1 # intervals:  18
+average accuracy:  0.319000 , std:  0.043871
+alpha:  0.3 nkw:  500 n_month:  1 # intervals:  18
+average accuracy:  0.223938 , std:  0.075365
+alpha:  0.2 nkw:  500 n_month:  1 # intervals:  18
+average accuracy:  0.131938 , std:  0.043521
+alpha:  0.1 nkw:  500 n_month:  1 # intervals:  18
+average accuracy:  0.055500 , std:  0.028986
+alpha:  0.4 nkw:  1000 n_month:  18 # intervals:  1
+average accuracy:  0.031531 , std:  0.007370
+alpha:  0.3 nkw:  1000 n_month:  18 # intervals:  1
+average accuracy:  0.025500 , std:  0.006916
+alpha:  0.2 nkw:  1000 n_month:  18 # intervals:  1
+average accuracy:  0.028906 , std:  0.006483
+alpha:  0.1 nkw:  1000 n_month:  18 # intervals:  1
+average accuracy:  0.016469 , std:  0.004177
+alpha:  0.4 nkw:  1000 n_month:  6 # intervals:  3
+average accuracy:  0.082062 , std:  0.008283
+alpha:  0.3 nkw:  1000 n_month:  6 # intervals:  3
+average accuracy:  0.069031 , std:  0.014748
+alpha:  0.2 nkw:  1000 n_month:  6 # intervals:  3
+average accuracy:  0.058437 , std:  0.011401
+alpha:  0.1 nkw:  1000 n_month:  6 # intervals:  3
+average accuracy:  0.039563 , std:  0.009472
+alpha:  0.4 nkw:  1000 n_month:  3 # intervals:  6
+average accuracy:  0.166437 , std:  0.015049
+alpha:  0.3 nkw:  1000 n_month:  3 # intervals:  6
+average accuracy:  0.143531 , std:  0.011316
+alpha:  0.2 nkw:  1000 n_month:  3 # intervals:  6
+average accuracy:  0.108000 , std:  0.013101
+alpha:  0.1 nkw:  1000 n_month:  3 # intervals:  6
+average accuracy:  0.052187 , std:  0.007019
+alpha:  0.4 nkw:  1000 n_month:  2 # intervals:  9
+average accuracy:  0.219812 , std:  0.018288
+alpha:  0.3 nkw:  1000 n_month:  2 # intervals:  9
+average accuracy:  0.170312 , std:  0.014496
+alpha:  0.2 nkw:  1000 n_month:  2 # intervals:  9
+average accuracy:  0.117313 , std:  0.018267
+alpha:  0.1 nkw:  1000 n_month:  2 # intervals:  9
+average accuracy:  0.042188 , std:  0.011119
+alpha:  0.4 nkw:  1000 n_month:  1 # intervals:  18
+average accuracy:  0.228875 , std:  0.039053
+alpha:  0.3 nkw:  1000 n_month:  1 # intervals:  18
+average accuracy:  0.176813 , std:  0.033667
+alpha:  0.2 nkw:  1000 n_month:  1 # intervals:  18
+average accuracy:  0.105375 , std:  0.029313
+alpha:  0.1 nkw:  1000 n_month:  1 # intervals:  18
+average accuracy:  0.045187 , std:  0.011253
+alpha:  0.4 nkw:  2000 n_month:  18 # intervals:  1
+average accuracy:  0.015625 , std:  0.003324
+alpha:  0.3 nkw:  2000 n_month:  18 # intervals:  1
+average accuracy:  0.015312 , std:  0.005302
+alpha:  0.2 nkw:  2000 n_month:  18 # intervals:  1
+average accuracy:  0.010453 , std:  0.002778
+alpha:  0.1 nkw:  2000 n_month:  18 # intervals:  1
+average accuracy:  0.010437 , std:  0.002597
+alpha:  0.4 nkw:  2000 n_month:  6 # intervals:  3
+average accuracy:  0.055719 , std:  0.006577
+alpha:  0.3 nkw:  2000 n_month:  6 # intervals:  3
+average accuracy:  0.048109 , std:  0.007697
+alpha:  0.2 nkw:  2000 n_month:  6 # intervals:  3
+average accuracy:  0.036984 , std:  0.004414
+alpha:  0.1 nkw:  2000 n_month:  6 # intervals:  3
+average accuracy:  0.020328 , std:  0.003535
+alpha:  0.4 nkw:  2000 n_month:  3 # intervals:  6
+average accuracy:  0.122078 , std:  0.009974
+alpha:  0.3 nkw:  2000 n_month:  3 # intervals:  6
+average accuracy:  0.102031 , std:  0.003920
+alpha:  0.2 nkw:  2000 n_month:  3 # intervals:  6
+average accuracy:  0.072734 , std:  0.006024
+alpha:  0.1 nkw:  2000 n_month:  3 # intervals:  6
+average accuracy:  0.044672 , std:  0.005742
+alpha:  0.4 nkw:  2000 n_month:  2 # intervals:  9
+average accuracy:  0.145453 , std:  0.011470
+alpha:  0.3 nkw:  2000 n_month:  2 # intervals:  9
+average accuracy:  0.114078 , std:  0.009463
+alpha:  0.2 nkw:  2000 n_month:  2 # intervals:  9
+average accuracy:  0.064953 , std:  0.008614
+alpha:  0.1 nkw:  2000 n_month:  2 # intervals:  9
+average accuracy:  0.042531 , std:  0.006627
+alpha:  0.4 nkw:  2000 n_month:  1 # intervals:  18
+average accuracy:  0.178250 , std:  0.034375
+alpha:  0.3 nkw:  2000 n_month:  1 # intervals:  18
+average accuracy:  0.145547 , std:  0.034317
+alpha:  0.2 nkw:  2000 n_month:  1 # intervals:  18
+average accuracy:  0.085406 , std:  0.017090
+alpha:  0.1 nkw:  2000 n_month:  1 # intervals:  18
+average accuracy:  0.040813 , std:  0.013377
+alpha:  0.4 nkw:  3000 n_month:  18 # intervals:  1
+average accuracy:  0.012063 , std:  0.002404
+alpha:  0.3 nkw:  3000 n_month:  18 # intervals:  1
+average accuracy:  0.009604 , std:  0.002308
+alpha:  0.2 nkw:  3000 n_month:  18 # intervals:  1
+average accuracy:  0.008063 , std:  0.002357
+alpha:  0.1 nkw:  3000 n_month:  18 # intervals:  1
+average accuracy:  0.006917 , std:  0.001988
+alpha:  0.4 nkw:  3000 n_month:  6 # intervals:  3
+average accuracy:  0.039396 , std:  0.004978
+alpha:  0.3 nkw:  3000 n_month:  6 # intervals:  3
+average accuracy:  0.033760 , std:  0.003195
+alpha:  0.2 nkw:  3000 n_month:  6 # intervals:  3
+average accuracy:  0.026563 , std:  0.003332
+alpha:  0.1 nkw:  3000 n_month:  6 # intervals:  3
+average accuracy:  0.014583 , std:  0.002337
+alpha:  0.4 nkw:  3000 n_month:  3 # intervals:  6
+average accuracy:  0.095937 , std:  0.009301
+alpha:  0.3 nkw:  3000 n_month:  3 # intervals:  6
+average accuracy:  0.070948 , std:  0.008809
+alpha:  0.2 nkw:  3000 n_month:  3 # intervals:  6
+average accuracy:  0.053979 , std:  0.006794
+alpha:  0.1 nkw:  3000 n_month:  3 # intervals:  6
+average accuracy:  0.027552 , std:  0.003962
+alpha:  0.4 nkw:  3000 n_month:  2 # intervals:  9
+average accuracy:  0.111573 , std:  0.011540
+alpha:  0.3 nkw:  3000 n_month:  2 # intervals:  9
+average accuracy:  0.094365 , std:  0.008749
+alpha:  0.2 nkw:  3000 n_month:  2 # intervals:  9
+average accuracy:  0.064406 , std:  0.007876
+alpha:  0.1 nkw:  3000 n_month:  2 # intervals:  9
+average accuracy:  0.030771 , std:  0.003660
+alpha:  0.4 nkw:  3000 n_month:  1 # intervals:  18
+average accuracy:  0.141708 , std:  0.036145
+alpha:  0.3 nkw:  3000 n_month:  1 # intervals:  18
+average accuracy:  0.126219 , std:  0.025939
+alpha:  0.2 nkw:  3000 n_month:  1 # intervals:  18
+average accuracy:  0.070781 , std:  0.023916
+alpha:  0.1 nkw:  3000 n_month:  1 # intervals:  18
+average accuracy:  0.029740 , std:  0.012250
+

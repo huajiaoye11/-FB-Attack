@@ -1,664 +1,642 @@
-PS D胡晋源桌面学习毕设-FB-Attack & d胡晋源桌面学习毕设-FB-Attack.venvSPS D胡晋源桌面学习毕设-FB-Attack & d胡晋源桌面学习毕设-FB-Attack.PS D胡晋源桌面学习毕设-FB-Attack & d胡晋源桌面学习毕设-FB-Attack.venvScriptsActivate.ps1
-PS D胡晋源桌面学习毕设-FB-Attack & d胡晋源桌面学习毕设-FB-Attack.venvScriptsActivate.ps1     
-(.venv) PS D胡晋源桌面学习毕设-FB-Attack pythoPS D胡晋源桌面学习毕设-FB-Attack & d胡晋源桌面学习毕设-FB-Attack.venvScriptsActivate.ps1
-PS D胡晋源桌面学习毕设-FB-Attack & d胡晋源桌面学习毕设-FB-Attack.venvPS PS D胡晋源桌面学习毕设-FB-Attack & d胡晋源桌面学习毕设-FB-Attack.venvScriptsActivate.ps1
-PS D胡晋源桌面学习毕设-FB-Attack & d胡晋源桌面学习毕设-FB-Attack.venvScriptsActivate.ps1
-PS D胡晋源桌面学习毕设-FB-Attack & d胡晋源桌面学习毕设-FB-Attack.venvScriptsActivate.ps1
-Attack.venvScriptsActivate.ps1
-Attack.venvScriptsActivate.ps1
-Attack.venvScriptsActivate.ps1
-Attack.venvScriptsActivate.ps1
-(.venv) PS D胡晋源桌面学习毕设-FB-Attack python LAttack.venvScriptsActivAttack.venvScriptsActivate.ps1
-(.venv) PS D胡晋源桌面学习毕设-FB-Attack python Attack.venvScriptsActivate.ps1
-(.venv) PS D胡晋源桌面学习毕设-FB-Attack python LVIALVIA.py --device gpAttackAttack.venvScriptsActivate.ps1
-(.venv) PS D胡晋源桌面学习毕设-FB-Attack python LVIALVIA.py --deviAttack.venvScriptsActivate.ps1
-(.venv) PS D胡晋源桌面学习毕设-FB-Attack AtAttaAtAttack.venvScriptsActivate.ps1
-(.venv) PS D胡晋源桌面学习毕设-FB-Attack python LVIALVIA.py --device gpu
-ERROR GPU execution requires CuPy. Install a CUDA-enabled CuPy package first.
-Falling back to CPU execution.
-Using device CPU
 time  5602.0977458  s
 dataset_name  enron-full
 threshold  0.4 nkw  500 n_month  18 # intervals  1
-average accuracy  0.072 , std  0.0
+average accuracy  0.082000 , std  0.0
 threshold  0.35000000000000003 nkw  500 n_month  18 # intervals  1
-average accuracy  0.14 , std  0.0
+average accuracy  0.132000 , std  0.0
 threshold  0.30000000000000004 nkw  500 n_month  18 # intervals  1
-average accuracy  0.238 , std  0.0
+average accuracy  0.228000 , std  0.0
 threshold  0.25 nkw  500 n_month  18 # intervals  1 
-average accuracy  0.112 , std  0.0
+average accuracy  0.110000 , std  0.0
 threshold  0.2 nkw  500 n_month  18 # intervals  1  
-average accuracy  0.082 , std  0.0
+average accuracy  0.078000 , std  0.0
 threshold  0.15000000000000002 nkw  500 n_month  18 # intervals  1
-average accuracy  0.086 , std  0.0
+average accuracy  0.082000 , std  0.0
 threshold  0.09999999999999998 nkw  500 n_month  18 # intervals  1
-average accuracy  0.078 , std  0.0
+average accuracy  0.072000 , std  0.0
 threshold  0.04999999999999999 nkw  500 n_month  18 # intervals  1
-average accuracy  0.062 , std  0.0
+average accuracy  0.054000 , std  0.0
 threshold  0.4 nkw  500 n_month  6 # intervals  3   
-average accuracy  0.21 , std  0.0
+average accuracy  0.220000 , std  0.0
 threshold  0.35000000000000003 nkw  500 n_month  6 # intervals  3
-average accuracy  0.22 , std  0.0
+average accuracy  0.226000 , std  0.0
 threshold  0.30000000000000004 nkw  500 n_month  6 # intervals  3
-average accuracy  0.248 , std  0.0
+average accuracy  0.240000 , std  0.0
 threshold  0.25 nkw  500 n_month  6 # intervals  3  
-average accuracy  0.206 , std  0.0
+average accuracy  0.214000 , std  0.0
 threshold  0.2 nkw  500 n_month  6 # intervals  3   
-average accuracy  0.196 , std  0.0
+average accuracy  0.198000 , std  0.0
 threshold  0.15000000000000002 nkw  500 n_month  6 # intervals  3
-average accuracy  0.206 , std  0.0
+average accuracy  0.196000 , std  0.0
 threshold  0.09999999999999998 nkw  500 n_month  6 # intervals  3
-average accuracy  0.164 , std  0.0
+average accuracy  0.154000 , std  0.0
 threshold  0.04999999999999999 nkw  500 n_month  6 # intervals  3
-average accuracy  0.118 , std  0.0
+average accuracy  0.110000 , std  0.0
 threshold  0.4 nkw  500 n_month  3 # intervals  6   
-average accuracy  0.294 , std  0.0
+average accuracy  0.290000 , std  0.0
 threshold  0.35000000000000003 nkw  500 n_month  3 # intervals  6
-average accuracy  0.266 , std  0.0
+average accuracy  0.262000 , std  0.0
 threshold  0.30000000000000004 nkw  500 n_month  3 # intervals  6
-average accuracy  0.194 , std  0.0
+average accuracy  0.200000 , std  0.0
 threshold  0.25 nkw  500 n_month  3 # intervals  6  
-average accuracy  0.26 , std  0.0
+average accuracy  0.268000 , std  0.0
 threshold  0.2 nkw  500 n_month  3 # intervals  6   
-average accuracy  0.212 , std  0.0
+average accuracy  0.202000 , std  0.0
 threshold  0.15000000000000002 nkw  500 n_month  3 # intervals  6
-average accuracy  0.198 , std  0.0
+average accuracy  0.204000 , std  0.0
 threshold  0.09999999999999998 nkw  500 n_month  3 # intervals  6
-average accuracy  0.164 , std  0.0
+average accuracy  0.160000 , std  0.0
 threshold  0.04999999999999999 nkw  500 n_month  3 # intervals  6
-average accuracy  0.108 , std  0.0
+average accuracy  0.118000 , std  0.0
 threshold  0.4 nkw  500 n_month  2 # intervals  9   
-average accuracy  0.228 , std  0.0
+average accuracy  0.234000 , std  0.0
 threshold  0.35000000000000003 nkw  500 n_month  2 # intervals  9
-average accuracy  0.202 , std  0.0
+average accuracy  0.204000 , std  0.0
 threshold  0.30000000000000004 nkw  500 n_month  2 # intervals  9
-average accuracy  0.208 , std  0.0
+average accuracy  0.204000 , std  0.0
 threshold  0.25 nkw  500 n_month  2 # intervals  9  
-average accuracy  0.19 , std  0.0
+average accuracy  0.194000 , std  0.0
 threshold  0.2 nkw  500 n_month  2 # intervals  9   
-average accuracy  0.196 , std  0.0
+average accuracy  0.204000 , std  0.0
 threshold  0.15000000000000002 nkw  500 n_month  2 # intervals  9
-average accuracy  0.176 , std  0.0
+average accuracy  0.174000 , std  0.0
 threshold  0.09999999999999998 nkw  500 n_month  2 # intervals  9
-average accuracy  0.142 , std  0.0
+average accuracy  0.132000 , std  0.0
 threshold  0.04999999999999999 nkw  500 n_month  2 # intervals  9
-average accuracy  0.1 , std  0.0
+average accuracy  0.094000 , std  0.0
 threshold  0.4 nkw  500 n_month  1 # intervals  18  
-average accuracy  0.226 , std  0.0
+average accuracy  0.228000 , std  0.0
 threshold  0.35000000000000003 nkw  500 n_month  1 # intervals  18
-average accuracy  0.182 , std  0.0
+average accuracy  0.182000 , std  0.0
 threshold  0.30000000000000004 nkw  500 n_month  1 # intervals  18
-average accuracy  0.19 , std  0.0
+average accuracy  0.188000 , std  0.0
 threshold  0.25 nkw  500 n_month  1 # intervals  18 
-average accuracy  0.164 , std  0.0
+average accuracy  0.158000 , std  0.0
 threshold  0.2 nkw  500 n_month  1 # intervals  18  
-average accuracy  0.172 , std  0.0
+average accuracy  0.168000 , std  0.0
 threshold  0.15000000000000002 nkw  500 n_month  1 # intervals  18
-average accuracy  0.142 , std  0.0
+average accuracy  0.142000 , std  0.0
 threshold  0.09999999999999998 nkw  500 n_month  1 # intervals  18
-average accuracy  0.08 , std  0.0
+average accuracy  0.072000 , std  0.0
 threshold  0.04999999999999999 nkw  500 n_month  1 # intervals  18
-average accuracy  0.07 , std  0.0
+average accuracy  0.062000 , std  0.0
 threshold  0.4 nkw  1000 n_month  18 # intervals  1 
-average accuracy  0.103 , std  0.0
+average accuracy  0.104000 , std  0.0
 threshold  0.35000000000000003 nkw  1000 n_month  18 # intervals  1
-average accuracy  0.072 , std  0.0
+average accuracy  0.068000 , std  0.0
 threshold  0.30000000000000004 nkw  1000 n_month  18 # intervals  1
-average accuracy  0.056 , std  0.0
+average accuracy  0.056000 , std  0.0
 threshold  0.25 nkw  1000 n_month  18 # intervals  1
-average accuracy  0.063 , std  0.0
+average accuracy  0.063000 , std  0.0
 threshold  0.2 nkw  1000 n_month  18 # intervals  1 
-average accuracy  0.075 , std  0.0
+average accuracy  0.079000 , std  0.0
 threshold  0.15000000000000002 nkw  1000 n_month  18 # intervals  1
-average accuracy  0.053 , std  0.0
+average accuracy  0.052000 , std  0.0
 threshold  0.09999999999999998 nkw  1000 n_month  18 # intervals  1
-average accuracy  0.053 , std  0.0
+average accuracy  0.048000 , std  0.0
 threshold  0.04999999999999999 nkw  1000 n_month  18 # intervals  1
-average accuracy  0.029 , std  0.0
+average accuracy  0.031000 , std  0.0
 threshold  0.4 nkw  1000 n_month  6 # intervals  3  
-average accuracy  0.22 , std  0.0
+average accuracy  0.223000 , std  0.0
 threshold  0.35000000000000003 nkw  1000 n_month  6 # intervals  3
-average accuracy  0.135 , std  0.0
+average accuracy  0.131000 , std  0.0
 threshold  0.30000000000000004 nkw  1000 n_month  6 # intervals  3
-average accuracy  0.181 , std  0.0
+average accuracy  0.182000 , std  0.0
 threshold  0.25 nkw  1000 n_month  6 # intervals  3 
-average accuracy  0.183 , std  0.0
+average accuracy  0.179000 , std  0.0
 threshold  0.2 nkw  1000 n_month  6 # intervals  3  
-average accuracy  0.108 , std  0.0
+average accuracy  0.111000 , std  0.0
 threshold  0.15000000000000002 nkw  1000 n_month  6 # intervals  3
-average accuracy  0.138 , std  0.0
+average accuracy  0.137000 , std  0.0
 threshold  0.09999999999999998 nkw  1000 n_month  6 # intervals  3
-average accuracy  0.126 , std  0.0
+average accuracy  0.131000 , std  0.0
 threshold  0.04999999999999999 nkw  1000 n_month  6 # intervals  3
-average accuracy  0.057 , std  0.0
+average accuracy  0.061000 , std  0.0
 threshold  0.4 nkw  1000 n_month  3 # intervals  6  
-average accuracy  0.157 , std  0.0
+average accuracy  0.157000 , std  0.0
 threshold  0.35000000000000003 nkw  1000 n_month  3 # intervals  6
-average accuracy  0.175 , std  0.0
+average accuracy  0.179000 , std  0.0
 threshold  0.30000000000000004 nkw  1000 n_month  3 # intervals  6
-average accuracy  0.173 , std  0.0
+average accuracy  0.171000 , std  0.0
 threshold  0.25 nkw  1000 n_month  3 # intervals  6 
-average accuracy  0.152 , std  0.0
+average accuracy  0.148000 , std  0.0
 threshold  0.2 nkw  1000 n_month  3 # intervals  6  
-average accuracy  0.142 , std  0.0
+average accuracy  0.137000 , std  0.0
 threshold  0.15000000000000002 nkw  1000 n_month  3 # intervals  6
-average accuracy  0.119 , std  0.0
+average accuracy  0.124000 , std  0.0
 threshold  0.09999999999999998 nkw  1000 n_month  3 # intervals  6
-average accuracy  0.086 , std  0.0
+average accuracy  0.084000 , std  0.0
 threshold  0.04999999999999999 nkw  1000 n_month  3 # intervals  6
-average accuracy  0.071 , std  0.0
+average accuracy  0.070000 , std  0.0
 threshold  0.4 nkw  1000 n_month  2 # intervals  9  
-average accuracy  0.178 , std  0.0
+average accuracy  0.174000 , std  0.0
 threshold  0.35000000000000003 nkw  1000 n_month  2 # intervals  9
-average accuracy  0.151 , std  0.0
+average accuracy  0.149000 , std  0.0
 threshold  0.30000000000000004 nkw  1000 n_month  2 # intervals  9
-average accuracy  0.128 , std  0.0
+average accuracy  0.124000 , std  0.0
 threshold  0.25 nkw  1000 n_month  2 # intervals  9 
-average accuracy  0.148 , std  0.0
+average accuracy  0.149000 , std  0.0
 threshold  0.2 nkw  1000 n_month  2 # intervals  9  
-average accuracy  0.155 , std  0.0
+average accuracy  0.154000 , std  0.0
 threshold  0.15000000000000002 nkw  1000 n_month  2 # intervals  9
-average accuracy  0.122 , std  0.0
+average accuracy  0.124000 , std  0.0
 threshold  0.09999999999999998 nkw  1000 n_month  2 # intervals  9
-average accuracy  0.095 , std  0.0
+average accuracy  0.100000 , std  0.0
 threshold  0.04999999999999999 nkw  1000 n_month  2 # intervals  9
-average accuracy  0.063 , std  0.0
+average accuracy  0.063000 , std  0.0
 threshold  0.4 nkw  1000 n_month  1 # intervals  18 
-average accuracy  0.123 , std  0.0
+average accuracy  0.120000 , std  0.0
 threshold  0.35000000000000003 nkw  1000 n_month  1 # intervals  18
-average accuracy  0.135 , std  0.0
+average accuracy  0.135000 , std  0.0
 threshold  0.30000000000000004 nkw  1000 n_month  1 # intervals  18
-average accuracy  0.109 , std  0.0
+average accuracy  0.109000 , std  0.0
 threshold  0.25 nkw  1000 n_month  1 # intervals  18
-average accuracy  0.094 , std  0.0
+average accuracy  0.092000 , std  0.0
 threshold  0.2 nkw  1000 n_month  1 # intervals  18 
-average accuracy  0.122 , std  0.0
+average accuracy  0.127000 , std  0.0
 threshold  0.15000000000000002 nkw  1000 n_month  1 # intervals  18
-average accuracy  0.096 , std  0.0
+average accuracy  0.095000 , std  0.0
 threshold  0.09999999999999998 nkw  1000 n_month  1 # intervals  18
-average accuracy  0.073 , std  0.0
+average accuracy  0.078000 , std  0.0
 threshold  0.04999999999999999 nkw  1000 n_month  1 # intervals  18
-average accuracy  0.039 , std  0.0
+average accuracy  0.044000 , std  0.0
 threshold  0.4 nkw  2000 n_month  18 # intervals  1 
-average accuracy  0.0385 , std  0.0
+average accuracy  0.036500 , std  0.0
 threshold  0.35000000000000003 nkw  2000 n_month  18 # intervals  1
-average accuracy  0.038 , std  0.0
+average accuracy  0.040000 , std  0.0
 threshold  0.30000000000000004 nkw  2000 n_month  18 # intervals  1
-average accuracy  0.033 , std  0.0
+average accuracy  0.035500 , std  0.0
 threshold  0.25 nkw  2000 n_month  18 # intervals  1
-average accuracy  0.037 , std  0.0
+average accuracy  0.035500 , std  0.0
 threshold  0.2 nkw  2000 n_month  18 # intervals  1 
-average accuracy  0.0545 , std  0.0
+average accuracy  0.056000 , std  0.0
 threshold  0.15000000000000002 nkw  2000 n_month  18 # intervals  1
-average accuracy  0.028 , std  0.0
+average accuracy  0.027000 , std  0.0
 threshold  0.09999999999999998 nkw  2000 n_month  18 # intervals  1
-average accuracy  0.039 , std  0.0
+average accuracy  0.037500 , std  0.0
 threshold  0.04999999999999999 nkw  2000 n_month  18 # intervals  1
-average accuracy  0.0315 , std  0.0
+average accuracy  0.032500 , std  0.0
 threshold  0.4 nkw  2000 n_month  6 # intervals  3  
-average accuracy  0.0985 , std  0.0
+average accuracy  0.099000 , std  0.0
 threshold  0.35000000000000003 nkw  2000 n_month  6 # intervals  3
-average accuracy  0.1135 , std  0.0
+average accuracy  0.113000 , std  0.0
 threshold  0.30000000000000004 nkw  2000 n_month  6 # intervals  3
-average accuracy  0.096 , std  0.0
+average accuracy  0.098500 , std  0.0
 threshold  0.25 nkw  2000 n_month  6 # intervals  3 
-average accuracy  0.1015 , std  0.0
+average accuracy  0.103000 , std  0.0
 threshold  0.2 nkw  2000 n_month  6 # intervals  3  
-average accuracy  0.0755 , std  0.0
+average accuracy  0.074500 , std  0.0
 threshold  0.15000000000000002 nkw  2000 n_month  6 # intervals  3
-average accuracy  0.096 , std  0.0
+average accuracy  0.098500 , std  0.0
 threshold  0.09999999999999998 nkw  2000 n_month  6 # intervals  3
-average accuracy  0.0595 , std  0.0
+average accuracy  0.059500 , std  0.0
 threshold  0.04999999999999999 nkw  2000 n_month  6 # intervals  3
-average accuracy  0.0355 , std  0.0
+average accuracy  0.033000 , std  0.0
 threshold  0.4 nkw  2000 n_month  3 # intervals  6  
-average accuracy  0.1285 , std  0.0
+average accuracy  0.127500 , std  0.0
 threshold  0.35000000000000003 nkw  2000 n_month  3 # intervals  6
-average accuracy  0.099 , std  0.0
+average accuracy  0.096500 , std  0.0
 threshold  0.30000000000000004 nkw  2000 n_month  3 # intervals  6
-average accuracy  0.1105 , std  0.0
+average accuracy  0.110500 , std  0.0
 threshold  0.25 nkw  2000 n_month  3 # intervals  6 
-average accuracy  0.1045 , std  0.0
+average accuracy  0.105000 , std  0.0
 threshold  0.2 nkw  2000 n_month  3 # intervals  6  
-average accuracy  0.0975 , std  0.0
+average accuracy  0.097000 , std  0.0
 threshold  0.15000000000000002 nkw  2000 n_month  3 # intervals  6
-average accuracy  0.0635 , std  0.0
+average accuracy  0.061500 , std  0.0
 threshold  0.09999999999999998 nkw  2000 n_month  3 # intervals  6
-average accuracy  0.0675 , std  0.0
+average accuracy  0.066500 , std  0.0
 threshold  0.04999999999999999 nkw  2000 n_month  3 # intervals  6
-average accuracy  0.0385 , std  0.0
+average accuracy  0.040500 , std  0.0
 threshold  0.4 nkw  2000 n_month  2 # intervals  9  
-average accuracy  0.1235 , std  0.0
+average accuracy  0.123500 , std  0.0
 threshold  0.35000000000000003 nkw  2000 n_month  2 # intervals  9
-average accuracy  0.101 , std  0.0
+average accuracy  0.100000 , std  0.0
 threshold  0.30000000000000004 nkw  2000 n_month  2 # intervals  9
-average accuracy  0.1105 , std  0.0
+average accuracy  0.113000 , std  0.0
 threshold  0.25 nkw  2000 n_month  2 # intervals  9 
-average accuracy  0.098 , std  0.0
+average accuracy  0.099000 , std  0.0
 threshold  0.2 nkw  2000 n_month  2 # intervals  9  
-average accuracy  0.0845 , std  0.0
+average accuracy  0.085000 , std  0.0
 threshold  0.15000000000000002 nkw  2000 n_month  2 # intervals  9
-average accuracy  0.075 , std  0.0
+average accuracy  0.077500 , std  0.0
 threshold  0.09999999999999998 nkw  2000 n_month  2 # intervals  9
-average accuracy  0.058 , std  0.0
+average accuracy  0.059000 , std  0.0
 threshold  0.04999999999999999 nkw  2000 n_month  2 # intervals  9
-average accuracy  0.0395 , std  0.0
+average accuracy  0.038000 , std  0.0
 threshold  0.4 nkw  2000 n_month  1 # intervals  18 
-average accuracy  0.082 , std  0.0
+average accuracy  0.081500 , std  0.0
 threshold  0.35000000000000003 nkw  2000 n_month  1 # intervals  18
-average accuracy  0.078 , std  0.0
+average accuracy  0.076500 , std  0.0
 threshold  0.30000000000000004 nkw  2000 n_month  1 # intervals  18
-average accuracy  0.0625 , std  0.0
+average accuracy  0.061500 , std  0.0
 threshold  0.25 nkw  2000 n_month  1 # intervals  18
-average accuracy  0.0725 , std  0.0
+average accuracy  0.074000 , std  0.0
 threshold  0.2 nkw  2000 n_month  1 # intervals  18 
-average accuracy  0.057 , std  0.0
+average accuracy  0.058500 , std  0.0
 threshold  0.15000000000000002 nkw  2000 n_month  1 # intervals  18
-average accuracy  0.028 , std  0.0
+average accuracy  0.027500 , std  0.0
 threshold  0.09999999999999998 nkw  2000 n_month  1 # intervals  18
-average accuracy  0.017 , std  0.0
+average accuracy  0.019000 , std  0.0
 threshold  0.04999999999999999 nkw  2000 n_month  1 # intervals  18
-average accuracy  0.0225 , std  0.0
+average accuracy  0.023000 , std  0.0
 threshold  0.4 nkw  3000 n_month  18 # intervals  1 
-average accuracy  0.04 , std  0.0
+average accuracy  0.041333 , std  0.0
 threshold  0.35000000000000003 nkw  3000 n_month  18 # intervals  1
-average accuracy  0.03233333333333333 , std  0.0      
+average accuracy  0.032667 , std  0.0      
 threshold  0.30000000000000004 nkw  3000 n_month  18 # intervals  1
-average accuracy  0.023333333333333334 , std  0.0     
+average accuracy  0.023333 , std  0.0     
 threshold  0.25 nkw  3000 n_month  18 # intervals  1
-average accuracy  0.024333333333333332 , std  0.0     
+average accuracy  0.023667 , std  0.0     
 threshold  0.2 nkw  3000 n_month  18 # intervals  1 
-average accuracy  0.021666666666666667 , std  0.0     
+average accuracy  0.020667 , std  0.0     
 threshold  0.15000000000000002 nkw  3000 n_month  18 # intervals  1
-average accuracy  0.024333333333333332 , std  0.0     
+average accuracy  0.025333 , std  0.0     
 threshold  0.09999999999999998 nkw  3000 n_month  18 # intervals  1
-average accuracy  0.016666666666666666 , std  0.0     
+average accuracy  0.017333 , std  0.0     
 threshold  0.04999999999999999 nkw  3000 n_month  18 # intervals  1
-average accuracy  0.014333333333333333 , std  0.0     
+average accuracy  0.013000 , std  0.0     
 threshold  0.4 nkw  3000 n_month  6 # intervals  3  
-average accuracy  0.069 , std  0.0
+average accuracy  0.067333 , std  0.0
 threshold  0.35000000000000003 nkw  3000 n_month  6 # intervals  3
-average accuracy  0.08566666666666667 , std  0.0      
+average accuracy  0.084333 , std  0.0      
 threshold  0.30000000000000004 nkw  3000 n_month  6 # intervals  3
-average accuracy  0.08633333333333333 , std  0.0      
+average accuracy  0.085333 , std  0.0      
 threshold  0.25 nkw  3000 n_month  6 # intervals  3 
-average accuracy  0.07033333333333333 , std  0.0      
+average accuracy  0.072000 , std  0.0      
 threshold  0.2 nkw  3000 n_month  6 # intervals  3  
-average accuracy  0.060333333333333336 , std  0.0     
+average accuracy  0.059333 , std  0.0     
 threshold  0.15000000000000002 nkw  3000 n_month  6 # intervals  3
-average accuracy  0.05 , std  0.0
+average accuracy  0.051667 , std  0.0
 threshold  0.09999999999999998 nkw  3000 n_month  6 # intervals  3
-average accuracy  0.04 , std  0.0
+average accuracy  0.040333 , std  0.0
 threshold  0.04999999999999999 nkw  3000 n_month  6 # intervals  3
-average accuracy  0.03233333333333333 , std  0.0      
+average accuracy  0.033667 , std  0.0      
 threshold  0.4 nkw  3000 n_month  3 # intervals  6  
-average accuracy  0.10866666666666666 , std  0.0      
+average accuracy  0.107333 , std  0.0      
 threshold  0.35000000000000003 nkw  3000 n_month  3 # intervals  6
-average accuracy  0.08966666666666667 , std  0.0      
+average accuracy  0.090000 , std  0.0      
 threshold  0.30000000000000004 nkw  3000 n_month  3 # intervals  6
-average accuracy  0.07966666666666666 , std  0.0      
+average accuracy  0.080000 , std  0.0      
 threshold  0.25 nkw  3000 n_month  3 # intervals  6 
-average accuracy  0.094 , std  0.0
+average accuracy  0.095333 , std  0.0
 threshold  0.2 nkw  3000 n_month  3 # intervals  6  
-average accuracy  0.071 , std  0.0
+average accuracy  0.071667 , std  0.0
 threshold  0.15000000000000002 nkw  3000 n_month  3 # intervals  6
-average accuracy  0.075 , std  0.0
+average accuracy  0.076000 , std  0.0
 threshold  0.09999999999999998 nkw  3000 n_month  3 # intervals  6
-average accuracy  0.04466666666666667 , std  0.0      
+average accuracy  0.044333 , std  0.0      
 threshold  0.04999999999999999 nkw  3000 n_month  3 # intervals  6
-average accuracy  0.028333333333333332 , std  0.0     
+average accuracy  0.029333 , std  0.0     
 threshold  0.4 nkw  3000 n_month  2 # intervals  9  
-average accuracy  0.09166666666666666 , std  0.0      
+average accuracy  0.090000 , std  0.0      
 threshold  0.35000000000000003 nkw  3000 n_month  2 # intervals  9
-average accuracy  0.083 , std  0.0
+average accuracy  0.084667 , std  0.0
 threshold  0.30000000000000004 nkw  3000 n_month  2 # intervals  9
-average accuracy  0.081 , std  0.0
+average accuracy  0.079667 , std  0.0
 threshold  0.25 nkw  3000 n_month  2 # intervals  9 
-average accuracy  0.07133333333333333 , std  0.0      
+average accuracy  0.073000 , std  0.0      
 threshold  0.2 nkw  3000 n_month  2 # intervals  9  
-average accuracy  0.06533333333333333 , std  0.0      
+average accuracy  0.066333 , std  0.0      
 threshold  0.15000000000000002 nkw  3000 n_month  2 # intervals  9
-average accuracy  0.056 , std  0.0
+average accuracy  0.055667 , std  0.0
 threshold  0.09999999999999998 nkw  3000 n_month  2 # intervals  9
-average accuracy  0.050333333333333334 , std  0.0     
+average accuracy  0.052000 , std  0.0     
 threshold  0.04999999999999999 nkw  3000 n_month  2 # intervals  9
-average accuracy  0.028666666666666667 , std  0.0     
+average accuracy  0.028667 , std  0.0     
 threshold  0.4 nkw  3000 n_month  1 # intervals  18 
-average accuracy  0.05733333333333333 , std  0.0      
+average accuracy  0.056000 , std  0.0      
 threshold  0.35000000000000003 nkw  3000 n_month  1 # intervals  18
-average accuracy  0.054 , std  0.0
+average accuracy  0.053667 , std  0.0
 threshold  0.30000000000000004 nkw  3000 n_month  1 # intervals  18
-average accuracy  0.05533333333333333 , std  0.0      
+average accuracy  0.055667 , std  0.0      
 threshold  0.25 nkw  3000 n_month  1 # intervals  18
-average accuracy  0.049 , std  0.0
+average accuracy  0.048000 , std  0.0
 threshold  0.2 nkw  3000 n_month  1 # intervals  18 
-average accuracy  0.019666666666666666 , std  0.0     
+average accuracy  0.020333 , std  0.0     
 threshold  0.15000000000000002 nkw  3000 n_month  1 # intervals  18
-average accuracy  0.021333333333333333 , std  0.0     
+average accuracy  0.019667 , std  0.0     
 threshold  0.09999999999999998 nkw  3000 n_month  1 # intervals  18
-average accuracy  0.007333333333333333 , std  0.0     
+average accuracy  0.007000 , std  0.0     
 threshold  0.04999999999999999 nkw  3000 n_month  1 # intervals  18
-average accuracy  0.0026666666666666666 , std  0.0    
+average accuracy  0.003667 , std  0.0    
 
 dataset_name  lucene
 threshold  0.4 nkw  500 n_month  18 # intervals  1  
-average accuracy  0.136 , std  0.0
+average accuracy  0.130000 , std  0.0
 threshold  0.35000000000000003 nkw  500 n_month  18 # intervals  1
-average accuracy  0.166 , std  0.0
+average accuracy  0.172000 , std  0.0
 threshold  0.30000000000000004 nkw  500 n_month  18 # intervals  1
-average accuracy  0.15 , std  0.0
+average accuracy  0.142000 , std  0.0
 threshold  0.25 nkw  500 n_month  18 # intervals  1 
-average accuracy  0.212 , std  0.0
+average accuracy  0.222000 , std  0.0
 threshold  0.2 nkw  500 n_month  18 # intervals  1  
-average accuracy  0.214 , std  0.0
+average accuracy  0.212000 , std  0.0
 threshold  0.15000000000000002 nkw  500 n_month  18 # intervals  1
-average accuracy  0.126 , std  0.0
+average accuracy  0.136000 , std  0.0
 threshold  0.09999999999999998 nkw  500 n_month  18 # intervals  1
-average accuracy  0.132 , std  0.0
+average accuracy  0.138000 , std  0.0
 threshold  0.04999999999999999 nkw  500 n_month  18 # intervals  1
-average accuracy  0.112 , std  0.0
+average accuracy  0.120000 , std  0.0
 threshold  0.4 nkw  500 n_month  6 # intervals  3   
-average accuracy  0.26 , std  0.0
+average accuracy  0.256000 , std  0.0
 threshold  0.35000000000000003 nkw  500 n_month  6 # intervals  3
-average accuracy  0.21 , std  0.0
+average accuracy  0.204000 , std  0.0
 threshold  0.30000000000000004 nkw  500 n_month  6 # intervals  3
-average accuracy  0.232 , std  0.0
+average accuracy  0.232000 , std  0.0
 threshold  0.25 nkw  500 n_month  6 # intervals  3  
-average accuracy  0.238 , std  0.0
+average accuracy  0.232000 , std  0.0
 threshold  0.2 nkw  500 n_month  6 # intervals  3   
-average accuracy  0.158 , std  0.0
+average accuracy  0.164000 , std  0.0
 threshold  0.15000000000000002 nkw  500 n_month  6 # intervals  3
-average accuracy  0.172 , std  0.0
+average accuracy  0.178000 , std  0.0
 threshold  0.09999999999999998 nkw  500 n_month  6 # intervals  3
-average accuracy  0.154 , std  0.0
+average accuracy  0.144000 , std  0.0
 threshold  0.04999999999999999 nkw  500 n_month  6 # intervals  3
-average accuracy  0.12 , std  0.0
+average accuracy  0.128000 , std  0.0
 threshold  0.4 nkw  500 n_month  3 # intervals  6   
-average accuracy  0.18 , std  0.0
+average accuracy  0.180000 , std  0.0
 threshold  0.35000000000000003 nkw  500 n_month  3 # intervals  6
-average accuracy  0.176 , std  0.0
+average accuracy  0.180000 , std  0.0
 threshold  0.30000000000000004 nkw  500 n_month  3 # intervals  6
-average accuracy  0.132 , std  0.0
+average accuracy  0.122000 , std  0.0
 threshold  0.25 nkw  500 n_month  3 # intervals  6  
-average accuracy  0.182 , std  0.0
+average accuracy  0.174000 , std  0.0
 threshold  0.2 nkw  500 n_month  3 # intervals  6   
-average accuracy  0.148 , std  0.0
+average accuracy  0.148000 , std  0.0
 threshold  0.15000000000000002 nkw  500 n_month  3 # intervals  6
-average accuracy  0.094 , std  0.0
+average accuracy  0.092000 , std  0.0
 threshold  0.09999999999999998 nkw  500 n_month  3 # intervals  6
-average accuracy  0.108 , std  0.0
+average accuracy  0.104000 , std  0.0
 threshold  0.04999999999999999 nkw  500 n_month  3 # intervals  6
-average accuracy  0.078 , std  0.0
+average accuracy  0.068000 , std  0.0
 threshold  0.4 nkw  500 n_month  2 # intervals  9   
-average accuracy  0.146 , std  0.0
+average accuracy  0.142000 , std  0.0
 threshold  0.35000000000000003 nkw  500 n_month  2 # intervals  9
-average accuracy  0.164 , std  0.0
+average accuracy  0.172000 , std  0.0
 threshold  0.30000000000000004 nkw  500 n_month  2 # intervals  9
-average accuracy  0.094 , std  0.0
+average accuracy  0.086000 , std  0.0
 threshold  0.25 nkw  500 n_month  2 # intervals  9  
-average accuracy  0.112 , std  0.0
+average accuracy  0.104000 , std  0.0
 threshold  0.2 nkw  500 n_month  2 # intervals  9   
-average accuracy  0.124 , std  0.0
+average accuracy  0.128000 , std  0.0
 threshold  0.15000000000000002 nkw  500 n_month  2 # intervals  9
-average accuracy  0.104 , std  0.0
+average accuracy  0.096000 , std  0.0
 threshold  0.09999999999999998 nkw  500 n_month  2 # intervals  9
-average accuracy  0.104 , std  0.0
+average accuracy  0.110000 , std  0.0
 threshold  0.04999999999999999 nkw  500 n_month  2 # intervals  9
-average accuracy  0.07 , std  0.0
+average accuracy  0.064000 , std  0.0
 threshold  0.4 nkw  500 n_month  1 # intervals  18  
-average accuracy  0.108 , std  0.0
+average accuracy  0.102000 , std  0.0
 threshold  0.35000000000000003 nkw  500 n_month  1 # intervals  18
-average accuracy  0.11 , std  0.0
+average accuracy  0.120000 , std  0.0
 threshold  0.30000000000000004 nkw  500 n_month  1 # intervals  18
-average accuracy  0.076 , std  0.0
+average accuracy  0.080000 , std  0.0
 threshold  0.25 nkw  500 n_month  1 # intervals  18 
-average accuracy  0.08 , std  0.0
+average accuracy  0.086000 , std  0.0
 threshold  0.2 nkw  500 n_month  1 # intervals  18  
-average accuracy  0.094 , std  0.0
+average accuracy  0.088000 , std  0.0
 threshold  0.15000000000000002 nkw  500 n_month  1 # intervals  18
-average accuracy  0.076 , std  0.0
+average accuracy  0.074000 , std  0.0
 threshold  0.09999999999999998 nkw  500 n_month  1 # intervals  18
-average accuracy  0.084 , std  0.0
+average accuracy  0.090000 , std  0.0
 threshold  0.04999999999999999 nkw  500 n_month  1 # intervals  18
-average accuracy  0.05 , std  0.0
+average accuracy  0.058000 , std  0.0
 threshold  0.4 nkw  1000 n_month  18 # intervals  1 
-average accuracy  0.093 , std  0.0
+average accuracy  0.094000 , std  0.0
 threshold  0.35000000000000003 nkw  1000 n_month  18 # intervals  1
-average accuracy  0.087 , std  0.0
+average accuracy  0.085000 , std  0.0
 threshold  0.30000000000000004 nkw  1000 n_month  18 # intervals  1
-average accuracy  0.088 , std  0.0
+average accuracy  0.091000 , std  0.0
 threshold  0.25 nkw  1000 n_month  18 # intervals  1
-average accuracy  0.078 , std  0.0
+average accuracy  0.076000 , std  0.0
 threshold  0.2 nkw  1000 n_month  18 # intervals  1 
-average accuracy  0.072 , std  0.0
+average accuracy  0.071000 , std  0.0
 threshold  0.15000000000000002 nkw  1000 n_month  18 # intervals  1
-average accuracy  0.055 , std  0.0
+average accuracy  0.056000 , std  0.0
 threshold  0.09999999999999998 nkw  1000 n_month  18 # intervals  1
-average accuracy  0.075 , std  0.0
+average accuracy  0.080000 , std  0.0
 threshold  0.04999999999999999 nkw  1000 n_month  18 # intervals  1
-average accuracy  0.078 , std  0.0
+average accuracy  0.083000 , std  0.0
 threshold  0.4 nkw  1000 n_month  6 # intervals  3  
-average accuracy  0.14 , std  0.0
+average accuracy  0.140000 , std  0.0
 threshold  0.35000000000000003 nkw  1000 n_month  6 # intervals  3
-average accuracy  0.162 , std  0.0
+average accuracy  0.164000 , std  0.0
 threshold  0.30000000000000004 nkw  1000 n_month  6 # intervals  3
-average accuracy  0.147 , std  0.0
+average accuracy  0.150000 , std  0.0
 threshold  0.25 nkw  1000 n_month  6 # intervals  3 
-average accuracy  0.125 , std  0.0
+average accuracy  0.127000 , std  0.0
 threshold  0.2 nkw  1000 n_month  6 # intervals  3  
-average accuracy  0.122 , std  0.0
+average accuracy  0.118000 , std  0.0
 threshold  0.15000000000000002 nkw  1000 n_month  6 # intervals  3
-average accuracy  0.093 , std  0.0
+average accuracy  0.091000 , std  0.0
 threshold  0.09999999999999998 nkw  1000 n_month  6 # intervals  3
-average accuracy  0.075 , std  0.0
+average accuracy  0.073000 , std  0.0
 threshold  0.04999999999999999 nkw  1000 n_month  6 # intervals  3
-average accuracy  0.066 , std  0.0
+average accuracy  0.062000 , std  0.0
 threshold  0.4 nkw  1000 n_month  3 # intervals  6  
-average accuracy  0.124 , std  0.0
+average accuracy  0.124000 , std  0.0
 threshold  0.35000000000000003 nkw  1000 n_month  3 # intervals  6
-average accuracy  0.148 , std  0.0
+average accuracy  0.143000 , std  0.0
 threshold  0.30000000000000004 nkw  1000 n_month  3 # intervals  6
-average accuracy  0.104 , std  0.0
+average accuracy  0.108000 , std  0.0
 threshold  0.25 nkw  1000 n_month  3 # intervals  6 
-average accuracy  0.122 , std  0.0
+average accuracy  0.125000 , std  0.0
 threshold  0.2 nkw  1000 n_month  3 # intervals  6  
-average accuracy  0.095 , std  0.0
+average accuracy  0.093000 , std  0.0
 threshold  0.15000000000000002 nkw  1000 n_month  3 # intervals  6
-average accuracy  0.073 , std  0.0
+average accuracy  0.077000 , std  0.0
 threshold  0.09999999999999998 nkw  1000 n_month  3 # intervals  6
-average accuracy  0.055 , std  0.0
+average accuracy  0.053000 , std  0.0
 threshold  0.04999999999999999 nkw  1000 n_month  3 # intervals  6
-average accuracy  0.038 , std  0.0
+average accuracy  0.033000 , std  0.0
 threshold  0.4 nkw  1000 n_month  2 # intervals  9  
-average accuracy  0.124 , std  0.0
+average accuracy  0.120000 , std  0.0
 threshold  0.35000000000000003 nkw  1000 n_month  2 # intervals  9
-average accuracy  0.111 , std  0.0
+average accuracy  0.116000 , std  0.0
 threshold  0.30000000000000004 nkw  1000 n_month  2 # intervals  9
-average accuracy  0.094 , std  0.0
+average accuracy  0.089000 , std  0.0
 threshold  0.25 nkw  1000 n_month  2 # intervals  9 
-average accuracy  0.072 , std  0.0
+average accuracy  0.070000 , std  0.0
 threshold  0.2 nkw  1000 n_month  2 # intervals  9  
-average accuracy  0.081 , std  0.0
+average accuracy  0.077000 , std  0.0
 threshold  0.15000000000000002 nkw  1000 n_month  2 # intervals  9
-average accuracy  0.07 , std  0.0
+average accuracy  0.065000 , std  0.0
 threshold  0.09999999999999998 nkw  1000 n_month  2 # intervals  9
-average accuracy  0.066 , std  0.0
+average accuracy  0.066000 , std  0.0
 threshold  0.04999999999999999 nkw  1000 n_month  2 # intervals  9
-average accuracy  0.045 , std  0.0
+average accuracy  0.041000 , std  0.0
 threshold  0.4 nkw  1000 n_month  1 # intervals  18 
-average accuracy  0.056 , std  0.0
+average accuracy  0.059000 , std  0.0
 threshold  0.35000000000000003 nkw  1000 n_month  1 # intervals  18
-average accuracy  0.068 , std  0.0
+average accuracy  0.066000 , std  0.0
 threshold  0.30000000000000004 nkw  1000 n_month  1 # intervals  18
-average accuracy  0.058 , std  0.0
+average accuracy  0.057000 , std  0.0
 threshold  0.25 nkw  1000 n_month  1 # intervals  18
-average accuracy  0.064 , std  0.0
+average accuracy  0.069000 , std  0.0
 threshold  0.2 nkw  1000 n_month  1 # intervals  18 
-average accuracy  0.05 , std  0.0
+average accuracy  0.052000 , std  0.0
 threshold  0.15000000000000002 nkw  1000 n_month  1 # intervals  18
-average accuracy  0.048 , std  0.0
+average accuracy  0.046000 , std  0.0
 threshold  0.09999999999999998 nkw  1000 n_month  1 # intervals  18
-average accuracy  0.046 , std  0.0
+average accuracy  0.049000 , std  0.0
 threshold  0.04999999999999999 nkw  1000 n_month  1 # intervals  18
-average accuracy  0.032 , std  0.0
+average accuracy  0.029000 , std  0.0
 threshold  0.4 nkw  2000 n_month  18 # intervals  1 
-average accuracy  0.0555 , std  0.0
+average accuracy  0.057500 , std  0.0
 threshold  0.35000000000000003 nkw  2000 n_month  18 # intervals  1
-average accuracy  0.0535 , std  0.0
+average accuracy  0.055500 , std  0.0
 threshold  0.30000000000000004 nkw  2000 n_month  18 # intervals  1
-average accuracy  0.0495 , std  0.0
+average accuracy  0.050500 , std  0.0
 threshold  0.25 nkw  2000 n_month  18 # intervals  1
-average accuracy  0.044 , std  0.0
+average accuracy  0.043000 , std  0.0
 threshold  0.2 nkw  2000 n_month  18 # intervals  1 
-average accuracy  0.074 , std  0.0
+average accuracy  0.075000 , std  0.0
 threshold  0.15000000000000002 nkw  2000 n_month  18 # intervals  1
-average accuracy  0.0285 , std  0.0
+average accuracy  0.029000 , std  0.0
 threshold  0.09999999999999998 nkw  2000 n_month  18 # intervals  1
-average accuracy  0.0495 , std  0.0
+average accuracy  0.048500 , std  0.0
 threshold  0.04999999999999999 nkw  2000 n_month  18 # intervals  1
-average accuracy  0.032 , std  0.0
+average accuracy  0.030000 , std  0.0
 threshold  0.4 nkw  2000 n_month  6 # intervals  3  
-average accuracy  0.107 , std  0.0
+average accuracy  0.105000 , std  0.0
 threshold  0.35000000000000003 nkw  2000 n_month  6 # intervals  3
-average accuracy  0.0975 , std  0.0
+average accuracy  0.100000 , std  0.0
 threshold  0.30000000000000004 nkw  2000 n_month  6 # intervals  3
-average accuracy  0.0955 , std  0.0
+average accuracy  0.096000 , std  0.0
 threshold  0.25 nkw  2000 n_month  6 # intervals  3 
-average accuracy  0.095 , std  0.0
+average accuracy  0.095000 , std  0.0
 threshold  0.2 nkw  2000 n_month  6 # intervals  3  
-average accuracy  0.073 , std  0.0
+average accuracy  0.073500 , std  0.0
 threshold  0.15000000000000002 nkw  2000 n_month  6 # intervals  3
-average accuracy  0.0645 , std  0.0
+average accuracy  0.065000 , std  0.0
 threshold  0.09999999999999998 nkw  2000 n_month  6 # intervals  3
-average accuracy  0.048 , std  0.0
+average accuracy  0.049000 , std  0.0
 threshold  0.04999999999999999 nkw  2000 n_month  6 # intervals  3
-average accuracy  0.0475 , std  0.0
+average accuracy  0.045000 , std  0.0
 threshold  0.4 nkw  2000 n_month  3 # intervals  6  
-average accuracy  0.09 , std  0.0
+average accuracy  0.092500 , std  0.0
 threshold  0.35000000000000003 nkw  2000 n_month  3 # intervals  6
-average accuracy  0.082 , std  0.0
+average accuracy  0.084500 , std  0.0
 threshold  0.30000000000000004 nkw  2000 n_month  3 # intervals  6
-average accuracy  0.0625 , std  0.0
+average accuracy  0.065000 , std  0.0
 threshold  0.25 nkw  2000 n_month  3 # intervals  6 
-average accuracy  0.0725 , std  0.0
+average accuracy  0.070500 , std  0.0
 threshold  0.2 nkw  2000 n_month  3 # intervals  6  
-average accuracy  0.052 , std  0.0
+average accuracy  0.049500 , std  0.0
 threshold  0.15000000000000002 nkw  2000 n_month  3 # intervals  6
-average accuracy  0.049 , std  0.0
+average accuracy  0.049500 , std  0.0
 threshold  0.09999999999999998 nkw  2000 n_month  3 # intervals  6
-average accuracy  0.037 , std  0.0
+average accuracy  0.037000 , std  0.0
 threshold  0.04999999999999999 nkw  2000 n_month  3 # intervals  6
-average accuracy  0.0225 , std  0.0
+average accuracy  0.020500 , std  0.0
 threshold  0.4 nkw  2000 n_month  2 # intervals  9  
-average accuracy  0.0735 , std  0.0
+average accuracy  0.072500 , std  0.0
 threshold  0.35000000000000003 nkw  2000 n_month  2 # intervals  9
-average accuracy  0.065 , std  0.0
+average accuracy  0.064000 , std  0.0
 threshold  0.30000000000000004 nkw  2000 n_month  2 # intervals  9
-average accuracy  0.061 , std  0.0
+average accuracy  0.060000 , std  0.0
 threshold  0.25 nkw  2000 n_month  2 # intervals  9 
-average accuracy  0.0585 , std  0.0
+average accuracy  0.060000 , std  0.0
 threshold  0.2 nkw  2000 n_month  2 # intervals  9  
-average accuracy  0.047 , std  0.0
+average accuracy  0.048000 , std  0.0
 threshold  0.15000000000000002 nkw  2000 n_month  2 # intervals  9
-average accuracy  0.041 , std  0.0
+average accuracy  0.039500 , std  0.0
 threshold  0.09999999999999998 nkw  2000 n_month  2 # intervals  9
-average accuracy  0.0415 , std  0.0
+average accuracy  0.042000 , std  0.0
 threshold  0.04999999999999999 nkw  2000 n_month  2 # intervals  9
-average accuracy  0.0305 , std  0.0
+average accuracy  0.029000 , std  0.0
 threshold  0.4 nkw  2000 n_month  1 # intervals  18 
-average accuracy  0.044 , std  0.0
+average accuracy  0.043500 , std  0.0
 threshold  0.35000000000000003 nkw  2000 n_month  1 # intervals  18
-average accuracy  0.0445 , std  0.0
+average accuracy  0.045500 , std  0.0
 threshold  0.30000000000000004 nkw  2000 n_month  1 # intervals  18
-average accuracy  0.035 , std  0.0
+average accuracy  0.034000 , std  0.0
 threshold  0.25 nkw  2000 n_month  1 # intervals  18
-average accuracy  0.039 , std  0.0
+average accuracy  0.037000 , std  0.0
 threshold  0.2 nkw  2000 n_month  1 # intervals  18 
-average accuracy  0.0345 , std  0.0
+average accuracy  0.035500 , std  0.0
 threshold  0.15000000000000002 nkw  2000 n_month  1 # intervals  18
-average accuracy  0.03 , std  0.0
+average accuracy  0.031500 , std  0.0
 threshold  0.09999999999999998 nkw  2000 n_month  1 # intervals  18
-average accuracy  0.025 , std  0.0
+average accuracy  0.023000 , std  0.0
 threshold  0.04999999999999999 nkw  2000 n_month  1 # intervals  18
-average accuracy  0.01 , std  0.0
+average accuracy  0.007500 , std  0.0
 threshold  0.4 nkw  3000 n_month  18 # intervals  1 
-average accuracy  0.03333333333333333 , std  0.0      
+average accuracy  0.035000 , std  0.0      
 threshold  0.35000000000000003 nkw  3000 n_month  18 # intervals  1
-average accuracy  0.043333333333333335 , std  0.0     
+average accuracy  0.044333 , std  0.0     
 threshold  0.30000000000000004 nkw  3000 n_month  18 # intervals  1
-average accuracy  0.028 , std  0.0
+average accuracy  0.026333 , std  0.0
 threshold  0.25 nkw  3000 n_month  18 # intervals  1
-average accuracy  0.027666666666666666 , std  0.0     
+average accuracy  0.026333 , std  0.0     
 threshold  0.2 nkw  3000 n_month  18 # intervals  1 
-average accuracy  0.04833333333333333 , std  0.0      
+average accuracy  0.047667 , std  0.0      
 threshold  0.15000000000000002 nkw  3000 n_month  18 # intervals  1
-average accuracy  0.032 , std  0.0
+average accuracy  0.031000 , std  0.0
 threshold  0.09999999999999998 nkw  3000 n_month  18 # intervals  1
-average accuracy  0.028333333333333332 , std  0.0     
+average accuracy  0.028667 , std  0.0     
 threshold  0.04999999999999999 nkw  3000 n_month  18 # intervals  1
-average accuracy  0.02033333333333333 , std  0.0      
+average accuracy  0.021000 , std  0.0      
 threshold  0.4 nkw  3000 n_month  6 # intervals  3  
-average accuracy  0.056 , std  0.0
+average accuracy  0.056667 , std  0.0
 threshold  0.35000000000000003 nkw  3000 n_month  6 # intervals  3
-average accuracy  0.06433333333333334 , std  0.0      
+average accuracy  0.063667 , std  0.0      
 threshold  0.30000000000000004 nkw  3000 n_month  6 # intervals  3
-average accuracy  0.07366666666666667 , std  0.0      
+average accuracy  0.074000 , std  0.0      
 threshold  0.25 nkw  3000 n_month  6 # intervals  3 
-average accuracy  0.06133333333333333 , std  0.0      
+average accuracy  0.059667 , std  0.0      
 threshold  0.2 nkw  3000 n_month  6 # intervals  3  
-average accuracy  0.061 , std  0.0
+average accuracy  0.060000 , std  0.0
 threshold  0.15000000000000002 nkw  3000 n_month  6 # intervals  3
-average accuracy  0.035 , std  0.0
+average accuracy  0.035333 , std  0.0
 threshold  0.09999999999999998 nkw  3000 n_month  6 # intervals  3
-average accuracy  0.037333333333333336 , std  0.0     
+average accuracy  0.035667 , std  0.0     
 threshold  0.04999999999999999 nkw  3000 n_month  6 # intervals  3
-average accuracy  0.028666666666666667 , std  0.0     
+average accuracy  0.029000 , std  0.0     
 threshold  0.4 nkw  3000 n_month  3 # intervals  6  
-average accuracy  0.06133333333333333 , std  0.0      
+average accuracy  0.061000 , std  0.0      
 threshold  0.35000000000000003 nkw  3000 n_month  3 # intervals  6
-average accuracy  0.057 , std  0.0
+average accuracy  0.057667 , std  0.0
 threshold  0.30000000000000004 nkw  3000 n_month  3 # intervals  6
-average accuracy  0.056666666666666664 , std  0.0     
+average accuracy  0.056333 , std  0.0     
 threshold  0.25 nkw  3000 n_month  3 # intervals  6 
-average accuracy  0.04466666666666667 , std  0.0      
+average accuracy  0.045000 , std  0.0      
 threshold  0.2 nkw  3000 n_month  3 # intervals  6  
-average accuracy  0.043333333333333335 , std  0.0     
+average accuracy  0.044333 , std  0.0     
 threshold  0.15000000000000002 nkw  3000 n_month  3 # intervals  6
-average accuracy  0.032 , std  0.0
+average accuracy  0.033667 , std  0.0
 threshold  0.09999999999999998 nkw  3000 n_month  3 # intervals  6
-average accuracy  0.028666666666666667 , std  0.0     
+average accuracy  0.029333 , std  0.0     
 threshold  0.04999999999999999 nkw  3000 n_month  3 # intervals  6
-average accuracy  0.016666666666666666 , std  0.0     
+average accuracy  0.015667 , std  0.0     
 threshold  0.4 nkw  3000 n_month  2 # intervals  9  
-average accuracy  0.05533333333333333 , std  0.0      
+average accuracy  0.054667 , std  0.0      
 threshold  0.35000000000000003 nkw  3000 n_month  2 # intervals  9
-average accuracy  0.043333333333333335 , std  0.0     
+average accuracy  0.043000 , std  0.0     
 threshold  0.30000000000000004 nkw  3000 n_month  2 # intervals  9
-average accuracy  0.04566666666666667 , std  0.0      
+average accuracy  0.045000 , std  0.0      
 threshold  0.25 nkw  3000 n_month  2 # intervals  9 
-average accuracy  0.042666666666666665 , std  0.0     
+average accuracy  0.041000 , std  0.0     
 threshold  0.2 nkw  3000 n_month  2 # intervals  9  
-average accuracy  0.041 , std  0.0
+average accuracy  0.042333 , std  0.0
 threshold  0.15000000000000002 nkw  3000 n_month  2 # intervals  9
-average accuracy  0.041 , std  0.0
+average accuracy  0.042000 , std  0.0
 threshold  0.09999999999999998 nkw  3000 n_month  2 # intervals  9
-average accuracy  0.03166666666666667 , std  0.0      
+average accuracy  0.030000 , std  0.0      
 threshold  0.04999999999999999 nkw  3000 n_month  2 # intervals  9
-average accuracy  0.015333333333333332 , std  0.0
+average accuracy  0.015333 , std  0.0
 threshold  0.4 nkw  3000 n_month  1 # intervals  18 
-average accuracy  0.029 , std  0.0
+average accuracy  0.027333 , std  0.0
 threshold  0.35000000000000003 nkw  3000 n_month  1 # intervals  18
-average accuracy  0.029333333333333333 , std  0.0     
+average accuracy  0.027667 , std  0.0     
 threshold  0.30000000000000004 nkw  3000 n_month  1 # intervals  18
-average accuracy  0.030333333333333334 , std  0.0     
+average accuracy  0.031667 , std  0.0     
 threshold  0.25 nkw  3000 n_month  1 # intervals  18
+average accuracy:  0.14221875 , std:  0.0
 threshold  0.15000000000000002 nkw  3000 n_month  1 # intervals  18
-average accuracy  0.007666666666666666 , std  0.0
+average accuracy  0.008333 , std  0.0
 threshold  0.09999999999999998 nkw  3000 n_month  1 # intervals  18
-average accuracy  0.008666666666666666 , std  0.0
+average accuracy  0.009667 , std  0.0
 threshold  0.04999999999999999 nkw  3000 n_month  1 # intervals  18
-average accuracy  0.0 , std  0.0
-
-(.venv) PS D胡晋源桌面学习毕设-FB-Attack
-(.venv) PS D胡晋源桌面学习毕设-FB-Attack
-(.venv) PS D胡晋源桌面学习毕设-FB-Attack
+average accuracy  0.001000 , std  0.0

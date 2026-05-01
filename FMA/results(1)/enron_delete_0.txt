@@ -1,288 +1,256 @@
-(.venv) PS D:\胡晋源\桌面\学习\毕设\-FB-Attack\FMA> python enron_0.py
 correct query 24535
 dataset name: enron
 nkw: 500 query_number: 6 * 20000.0 month: 6 delete_rate = 0.00
-average accuracy:  0.20445833333333333
+average accuracy: 0.20445833333333333
 correct query 54272
 dataset name: enron
 nkw: 500 query_number: 12 * 10000.0 month: 12 delete_rate = 0.00
-average accuracy:  0.45226666666666665
+average accuracy: 0.45226666666666665
 correct query 83168
 dataset name: enron
 nkw: 500 query_number: 18 * 6666.666666666667 month: 18 delete_rate = 0.00
-average accuracy:  0.6930666666666667
+average accuracy: 0.6930666666666667
 correct query 111830
 dataset name: enron
 nkw: 500 query_number: 24 * 5000.0 month: 24 delete_rate = 0.00
-average accuracy:  0.9319166666666666
+average accuracy: 0.9319166666666666
 correct query 54978
 dataset name: enron
 nkw: 500 query_number: 6 * 40000.0 month: 6 delete_rate = 0.00
-average accuracy:  0.229075
+average accuracy: 0.229075
 correct query 114910
 dataset name: enron
 nkw: 500 query_number: 12 * 20000.0 month: 12 delete_rate = 0.00
-average accuracy:  0.47879166666666667
+average accuracy: 0.47879166666666667
 correct query 173710
 dataset name: enron
 nkw: 500 query_number: 18 * 13333.333333333334 month: 18 delete_rate = 0.00
-average accuracy:  0.7237916666666667
+average accuracy: 0.7237916666666667
 correct query 232484
 dataset name: enron
 nkw: 500 query_number: 24 * 10000.0 month: 24 delete_rate = 0.00
-average accuracy:  0.9686833333333333
+average accuracy: 0.9686833333333333
 correct query 86317
 dataset name: enron
 nkw: 500 query_number: 6 * 60000.0 month: 6 delete_rate = 0.00
-average accuracy:  0.23976944444444445
+average accuracy: 0.23976944444444445
 correct query 175813
 dataset name: enron
 nkw: 500 query_number: 12 * 30000.0 month: 12 delete_rate = 0.00
-average accuracy:  0.48836944444444447
+average accuracy: 0.48836944444444447
 correct query 264722
 dataset name: enron
 nkw: 500 query_number: 18 * 20000.0 month: 18 delete_rate = 0.00
-average accuracy:  0.7353388888888889
+average accuracy: 0.7353388888888889
 correct query 353305
 dataset name: enron
 nkw: 500 query_number: 24 * 15000.0 month: 24 delete_rate = 0.00
-average accuracy:  0.9814027777777777
+average accuracy: 0.9814027777777777
 correct query 117118
 dataset name: enron
 nkw: 500 query_number: 6 * 80000.0 month: 6 delete_rate = 0.00
-average accuracy:  0.24399583333333333
+average accuracy: 0.24399583333333333
 correct query 236089
 dataset name: enron
 nkw: 500 query_number: 12 * 40000.0 month: 12 delete_rate = 0.00
-average accuracy:  0.49185208333333336
+average accuracy: 0.49185208333333336
 correct query 355084
 dataset name: enron
 nkw: 500 query_number: 18 * 26666.666666666668 month: 18 delete_rate = 0.00
-average accuracy:  0.7397583333333333
+average accuracy: 0.7397583333333333
 correct query 473464
 dataset name: enron
 nkw: 500 query_number: 24 * 20000.0 month: 24 delete_rate = 0.00
-average accuracy:  0.9863833333333333
+average accuracy: 0.9863833333333333
 correct query 18849
 dataset name: enron
 nkw: 1000 query_number: 6 * 20000.0 month: 6 delete_rate = 0.00
-average accuracy:  0.157075
+average accuracy: 0.157075
 correct query 47019
 dataset name: enron
 nkw: 1000 query_number: 12 * 10000.0 month: 12 delete_rate = 0.00
-average accuracy:  0.391825
+average accuracy: 0.391825
 correct query 74115
 dataset name: enron
 nkw: 1000 query_number: 18 * 6666.666666666667 month: 18 delete_rate = 0.00
-average accuracy:  0.617625
+average accuracy: 0.617625
 correct query 100739
 dataset name: enron
 nkw: 1000 query_number: 24 * 5000.0 month: 24 delete_rate = 0.00
-average accuracy:  0.8394916666666666
+average accuracy: 0.8394916666666666
 correct query 47599
 dataset name: enron
 nkw: 1000 query_number: 6 * 40000.0 month: 6 delete_rate = 0.00
-average accuracy:  0.19832916666666667
+average accuracy: 0.19832916666666667
 correct query 108626
 dataset name: enron
 nkw: 1000 query_number: 12 * 20000.0 month: 12 delete_rate = 0.00
-average accuracy:  0.45260833333333333
+average accuracy: 0.45260833333333333
 correct query 165507
 dataset name: enron
 nkw: 1000 query_number: 18 * 13333.333333333334 month: 18 delete_rate = 0.00
-average accuracy:  0.6896125
+average accuracy: 0.6896125
 correct query 223576
 dataset name: enron
 nkw: 1000 query_number: 24 * 10000.0 month: 24 delete_rate = 0.00
-average accuracy:  0.9315666666666667
+average accuracy: 0.9315666666666667
 correct query 78319
 dataset name: enron
 nkw: 1000 query_number: 6 * 60000.0 month: 6 delete_rate = 0.00
-average accuracy:  0.2175527777777778
+average accuracy: 0.2175527777777778
 correct query 170015
 dataset name: enron
 nkw: 1000 query_number: 12 * 30000.0 month: 12 delete_rate = 0.00
-average accuracy:  0.47226388888888887
+average accuracy: 0.47226388888888887
 correct query 257717
 dataset name: enron
 nkw: 1000 query_number: 18 * 20000.0 month: 18 delete_rate = 0.00
-average accuracy:  0.7158805555555555
+average accuracy: 0.7158805555555555
 correct query 344613
 dataset name: enron
 nkw: 1000 query_number: 24 * 15000.0 month: 24 delete_rate = 0.00
-average accuracy:  0.9572583333333333
+average accuracy: 0.9572583333333333
 correct query 109463
 dataset name: enron
 nkw: 1000 query_number: 6 * 80000.0 month: 6 delete_rate = 0.00
-average accuracy:  0.22804791666666666
+average accuracy: 0.22804791666666666
 correct query 230440
 dataset name: enron
 nkw: 1000 query_number: 12 * 40000.0 month: 12 delete_rate = 0.00
-average accuracy:  0.4800833333333333
+average accuracy: 0.4800833333333333
 correct query 348536
 dataset name: enron
 nkw: 1000 query_number: 18 * 26666.666666666668 month: 18 delete_rate = 0.00
-average accuracy:  0.7261166666666666
+average accuracy: 0.7261166666666666
 correct query 465756
 dataset name: enron
 nkw: 1000 query_number: 24 * 20000.0 month: 24 delete_rate = 0.00
-average accuracy:  0.970325
+average accuracy: 0.970325
 correct query 13752
 dataset name: enron
 nkw: 2000 query_number: 6 * 20000.0 month: 6 delete_rate = 0.00
-average accuracy:  0.1146
+average accuracy: 0.1146
 correct query 37270
 dataset name: enron
 nkw: 2000 query_number: 12 * 10000.0 month: 12 delete_rate = 0.00
-average accuracy:  0.3105833333333333
+average accuracy: 0.3105833333333333
 correct query 61348
 dataset name: enron
 nkw: 2000 query_number: 18 * 6666.666666666667 month: 18 delete_rate = 0.00
-average accuracy:  0.5112333333333333
+average accuracy: 0.5112333333333333
 correct query 86337
 dataset name: enron
 nkw: 2000 query_number: 24 * 5000.0 month: 24 delete_rate = 0.00
-average accuracy:  0.719475
+average accuracy: 0.719475
 correct query 37210
 dataset name: enron
 nkw: 2000 query_number: 6 * 40000.0 month: 6 delete_rate = 0.00
-average accuracy:  0.15504166666666666
+average accuracy: 0.15504166666666666
 correct query 94150
 dataset name: enron
 nkw: 2000 query_number: 12 * 20000.0 month: 12 delete_rate = 0.00
-average accuracy:  0.39229166666666665
+average accuracy: 0.39229166666666665
 correct query 149113
 dataset name: enron
 nkw: 2000 query_number: 18 * 13333.333333333334 month: 18 delete_rate = 0.00
-average accuracy:  0.6213041666666667
+average accuracy: 0.6213041666666667
 correct query 203448
 dataset name: enron
 nkw: 2000 query_number: 24 * 10000.0 month: 24 delete_rate = 0.00
-average accuracy:  0.8477
+average accuracy: 0.8477
 correct query 65772
 dataset name: enron
 nkw: 2000 query_number: 6 * 60000.0 month: 6 delete_rate = 0.00
-average accuracy:  0.1827
+average accuracy: 0.1827
 correct query 154056
 dataset name: enron
 nkw: 2000 query_number: 12 * 30000.0 month: 12 delete_rate = 0.00
-average accuracy:  0.42793333333333333
+average accuracy: 0.42793333333333333
 correct query 239801
 dataset name: enron
 nkw: 2000 query_number: 18 * 20000.0 month: 18 delete_rate = 0.00
-average accuracy:  0.6661138888888889
+average accuracy: 0.6661138888888889
 correct query 324109
 dataset name: enron
 nkw: 2000 query_number: 24 * 15000.0 month: 24 delete_rate = 0.00
-average accuracy:  0.9003027777777778
+average accuracy: 0.9003027777777778
 correct query 95264
 dataset name: enron
 nkw: 2000 query_number: 6 * 80000.0 month: 6 delete_rate = 0.00
-average accuracy:  0.19846666666666668
+average accuracy: 0.19846666666666668
 correct query 214605
 dataset name: enron
 nkw: 2000 query_number: 12 * 40000.0 month: 12 delete_rate = 0.00
-average accuracy:  0.44709375
-k1 12 1905 0 0
+average accuracy: 0.44709375
 correct query 329399
 dataset name: enron
 nkw: 2000 query_number: 18 * 26666.666666666668 month: 18 delete_rate = 0.00
-average accuracy:  0.6862479166666666
-k1 12 1905 0 0
+average accuracy: 0.6862479166666666
 correct query 444349
 dataset name: enron
 nkw: 2000 query_number: 24 * 20000.0 month: 24 delete_rate = 0.00
-average accuracy:  0.9257270833333333
-nkw: 2000 query_number: 24 * 20000.0 month: 24 delete_rate = 0.00
-average accuracy:  0.9257270833333333
-correct query 11102
-nkw: 2000 query_number: 24 * 20000.0 month: 24 delete_rate = 0.00
-average accuracy:  0.9257270833333333
-average accuracy:  0.9257270833333333
+average accuracy: 0.9257270833333333
 correct query 11102
 dataset name: enron
 nkw: 3000 query_number: 6 * 20000.0 month: 6 delete_rate = 0.00
-average accuracy:  0.09251666666666666
+average accuracy: 0.09251666666666666
 correct query 31479
 dataset name: enron
 nkw: 3000 query_number: 12 * 10000.0 month: 12 delete_rate = 0.00
-average accuracy:  0.262325
-k1 12 2222 0 0
+average accuracy: 0.262325
 correct query 52062
 dataset name: enron
 nkw: 3000 query_number: 18 * 6666.666666666667 month: 18 delete_rate = 0.00
-average accuracy:  0.43385
-k1 12 2222 0 0
+average accuracy: 0.43385
 correct query 74299
 dataset name: enron
 nkw: 3000 query_number: 24 * 5000.0 month: 24 delete_rate = 0.00
-average accuracy:  0.6191583333333334
+average accuracy: 0.6191583333333334
 correct query 31431
 dataset name: enron
 nkw: 3000 query_number: 6 * 40000.0 month: 6 delete_rate = 0.00
-average accuracy:  0.1309625
+average accuracy: 0.1309625
 correct query 83766
 dataset name: enron
 nkw: 3000 query_number: 12 * 20000.0 month: 12 delete_rate = 0.00
-average accuracy:  0.349025
-k1 12 2432 0 0
-k1 13 381 0 0
+average accuracy: 0.349025
 correct query 133649
 dataset name: enron
 nkw: 3000 query_number: 18 * 13333.333333333334 month: 18 delete_rate = 0.00
-average accuracy:  0.5568708333333333
-k1 12 2432 0 0
-k1 13 381 0 0
+average accuracy: 0.5568708333333333
 correct query 187025
 dataset name: enron
 nkw: 3000 query_number: 24 * 10000.0 month: 24 delete_rate = 0.00
-average accuracy:  0.7792708333333334
+average accuracy: 0.7792708333333334
 correct query 55303
 dataset name: enron
 nkw: 3000 query_number: 6 * 60000.0 month: 6 delete_rate = 0.00
-average accuracy:  0.15361944444444445
+average accuracy: 0.15361944444444445
 correct query 139006
 dataset name: enron
 nkw: 3000 query_number: 12 * 30000.0 month: 12 delete_rate = 0.00
-average accuracy:  0.3861277777777778
-k1 12 2489 0 0
-k1 14 738 0 0
+average accuracy: 0.3861277777777778
 correct query 220051
 dataset name: enron
 nkw: 3000 query_number: 18 * 20000.0 month: 18 delete_rate = 0.00
-average accuracy:  0.6112527777777778
-k1 12 2489 0 0
-k1 14 738 0 0
+average accuracy: 0.6112527777777778
 correct query 301530
 dataset name: enron
 nkw: 3000 query_number: 24 * 15000.0 month: 24 delete_rate = 0.00
-average accuracy:  0.8375833333333333
+average accuracy: 0.8375833333333333
 correct query 84244
 dataset name: enron
 nkw: 3000 query_number: 6 * 80000.0 month: 6 delete_rate = 0.00
-average accuracy:  0.17550833333333332
+average accuracy: 0.17550833333333332
 correct query 196622
 dataset name: enron
 nkw: 3000 query_number: 12 * 40000.0 month: 12 delete_rate = 0.00
-average accuracy:  0.40962916666666666
-k1 12 1966 0 0
-k1 12 2189 0 0
-k1 12 2326 0 0
-k1 12 2343 0 0
+average accuracy: 0.40962916666666666
 correct query 306621
 dataset name: enron
 nkw: 3000 query_number: 18 * 26666.666666666668 month: 18 delete_rate = 0.00
-average accuracy:  0.63879375
-k1 12 1966 0 0
-k1 12 2189 0 0
-k1 12 2326 0 0
-k1 12 2343 0 0
-k1 18 2147 0 0
+average accuracy: 0.63879375
 correct query 418290
 dataset name: enron
 nkw: 3000 query_number: 24 * 20000.0 month: 24 delete_rate = 0.00
-average accuracy:  0.8714375
-(.venv) PS D:\胡晋源\桌面\学习\毕设\-FB-Attack\FMA>
-(.venv) PS D:\胡晋源\桌面\学习\毕设\-FB-Attack\FMA>
-(.venv) PS D:\胡晋源\桌面\学习\毕设\-FB-Attack\FMA>
-(.venv) PS D:\胡晋源\桌面\学习\毕设\-FB-Attack\FMA>
+average accuracy: 0.8714375
