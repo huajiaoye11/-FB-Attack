@@ -1,0 +1,224 @@
+{
+  "project": "FB-Attack",
+  "export_type": "project_cleanup_conversation",
+  "created_at": "2026-05-09",
+  "description": "DSSE泄露滥用攻击项目整理会话记录",
+  "sections": [
+    {
+      "title": "Initial cleanup requirements",
+      "messages": [
+        {
+          "role": "user",
+          "content": "分析项目结构。要求整理文件结构，先输出方案再确认执行。",
+          "summary": "要求全面扫描项目结构，识别命名不规范、重复文件、废弃文件等问题，先给出整理方案再执行。"
+        },
+        {
+          "role": "assistant",
+          "content": "分析了项目结构，发现FMA/LVIA/PVIA/fusion/preprocess模块，识别了_backup.py命名混乱、fusion副本重复、PVIA参数脚本重复等问题。",
+          "summary": "输出详细的项目结构分析，列出所有文件，识别了fusion - 副本重复、FMA/results(1)重复、三个相同utils.py、backup命名不准确等问题。"
+        }
+      ]
+    },
+    {
+      "title": "First cleanup execution",
+      "messages": [
+        {
+          "role": "user",
+          "content": "按要求整理项目文件夹：删除fusion - 副本/，处理FMA results目录，重命名_backup.py为_with_fusion_output.py，归档指定非核心文件，添加requirements.txt，更新README。",
+          "summary": "详细规定了直接删除fusion - 副本/、FMA/results重命名、backup重命名、归档文件、新增requirements.txt、更新README、明确禁止处理dataset/PVIA参数脚本/预处理脚本/utils合并/__init__.py。"
+        },
+        {
+          "role": "assistant",
+          "content": "逐步执行：删除fusion - 副本/，删除旧FMA/results/并将results(1)重命名，重命名三个_backup.py为_with_fusion_output.py，创建Archive/并归档指定文件，生成requirements.txt，更新README。",
+          "summary": "完成第一轮整理，全部12项检查通过。"
+        }
+      ]
+    },
+    {
+      "title": "FMA module merge",
+      "messages": [
+        {
+          "role": "user",
+          "content": "处理FMA模块：合并enron.py和enron_with_fusion_output.py，要求使用__file__路径、fusion JSON参数化命名不覆盖、只处理enron的fusion输出、lucene只加txt输出。详细规定了路径修复、参数化JSON命名规则、不删除已有JSON、不处理process_dict.py逻辑等。",
+          "summary": "分多轮逐步确认：先用修复路径+合并方案，确认后写入enron.py和process_dict.py；再写入lucene.py（仅txt输出）；重命名已有fusion JSON；归档enron_with_fusion_output.py；更新weighted_fusion.py注释；更新README。"
+        },
+        {
+          "role": "assistant",
+          "content": "分步完成：修复process_dict.py路径和enron.py路径，实现txt+fusion JSON双输出，fusion JSON使用参数化文件名（如fma_candidates_nkw500_query5000_month6_del20.json），lucene.py只加txt输出，重命名已有JSON文件（del05参数），归档旧脚本，更新weighted_fusion.py注释和README。",
+          "summary": "FMA模块整理完成：enron.py成为最终主脚本（txt+fusion JSON），lucene.py仅txt输出，fusion JSON按参数独立命名不覆盖，旧JSON已按原参数重命名。"
+        }
+      ]
+    },
+    {
+      "title": "README Chinese localization",
+      "messages": [
+        {
+          "role": "user",
+          "content": "将README.md改写为中文版本，要求只修改README，主体用中文，代码和路径保持英文，不改变实际表述内容。",
+          "summary": "要求README中文化，保留所有信息，只改变语言。"
+        },
+        {
+          "role": "assistant",
+          "content": "将README.md改写为中文版本，保留论文引用、目录结构、模块说明、安装方式、使用方式、注意事项等全部内容。",
+          "summary": "README中文化完成，修正了候选举果->候选结果的错别字。"
+        }
+      ]
+    },
+    {
+      "title": "datasets/ analysis",
+      "messages": [
+        {
+          "role": "user",
+          "content": "分析datasets/目录结构、数据内容、代码依赖、命名规则、问题，给出改进方案但不要执行。",
+          "summary": "要求全面分析datasets/，包括目录结构、文件格式、代码依赖、已知问题、分阶段改进方案。只分析不修改。"
+        },
+        {
+          "role": "assistant",
+          "content": "扫描了datasets/目录结构，抽样检查了.pkl文件内部结构，搜索了所有代码对datasets/的依赖，分析了命名规则问题。",
+          "summary": "输出详细报告：enron-full/48文件，lucene/132文件，趋势数据10文件，_dict/目录未被代码使用，命名不统一（YYYY_M vs YYYYM），月份不补零。建议四阶段改进方案。"
+        },
+        {
+          "role": "user",
+          "content": "新增datasets/README.md作为数据说明文档。",
+          "summary": "要求在datasets/下新增README.md文档。"
+        },
+        {
+          "role": "assistant",
+          "content": "在datasets/下新增README.md，包含目录用途、子目录和散文件说明、内部结构、命名规则、模块依赖关系、已知问题、改进建议等。",
+          "summary": "datasets/README.md已创建，只新增文档未修改任何数据文件。"
+        }
+      ]
+    },
+    {
+      "title": "PVIA module merge",
+      "messages": [
+        {
+          "role": "user",
+          "content": "处理PVIA模块中不同关键词数量脚本重复问题。要求先分析差异、给出方案、确认后再执行。不处理fusion脚本。",
+          "summary": "要求合并enron_partial_{500,1000,2000,3000,5000}.py和lucene_partial_{500,1000,2000,3000}.py为统一脚本，支持WORD_SIZE参数，添加txt输出，使用__file__路径。"
+        },
+        {
+          "role": "assistant",
+          "content": "分析了PVIA脚本差异：enron的500-3000版本仅word_size不同，5000版有重构优化但算法一致；lucene四个版本完全相同。建议以1000版为基础合并。",
+          "summary": "输出详细差异分析、结果文件格式分析、合并方案。推荐以1000版为基础（用户要求，不使用5000版优化），新增enron_partial.py和lucene_partial.py。"
+        },
+        {
+          "role": "user",
+          "content": "确认方案：以1000版本为基础（不用5000版），归档旧9个脚本，不处理fusion脚本，使用WORD_SIZE配置变量，输出txt文件名含word_size。",
+          "summary": "确认执行方案并要求写入。"
+        },
+        {
+          "role": "assistant",
+          "content": "写入PVIA_Enron/enron_partial.py和PVIA_Lucene/lucene_partial.py，归档9个旧参数脚本到Archive/，语法检查通过。",
+          "summary": "PVIA合并完成：两个统一脚本（基于1000版，__file__路径，WORD_SIZE配置，txt输出），9个旧脚本已归档，fusion脚本未处理。"
+        }
+      ]
+    }
+  ],
+  "decisions": [
+    "fusion - 副本/ 目录直接删除，不归档",
+    "FMA/results(1)/ 重命名为 FMA/results/，旧 FMA/results/ 删除",
+    "_backup.py 重命名为 _with_fusion_output.py（LVIA和PVIA保留此命名；FMA的已归档）",
+    "FMA/enron.py 合并原版和fusion输出版，成为最终主脚本",
+    "FMA/lucene.py 仅保留txt输出，不增加fusion JSON输出",
+    "FMA fusion JSON使用参数化文件名，每组参数独立保存不覆盖",
+    "已有fusion JSON按enron_with_fusion_output.py原参数重命名",
+    "FMA/enron_with_fusion_output.py 归档到 Archive/FMA/",
+    "FMA/process_dict.py 仅修复路径，不修改数据处理逻辑",
+    "PVIA参数脚本合并为统一脚本，使用WORD_SIZE配置变量",
+    "PVIA合并以1000版本为基础，不引入5000版的优化重构",
+    "PVIA fusion脚本(enron_partial_1000_with_fusion_output.py)暂不处理",
+    "datasets/ 暂不修改任何数据文件",
+    "preprocess/ 脚本暂不合并且不修改",
+    "utils.py 重复文件暂不合并",
+    "不新增、删除或修改__init__.py",
+    "README改为中文版本",
+    "新增 datasets/README.md 数据说明文档",
+    "降级处理：先分析后执行，关键操作需确认"
+  ],
+  "actions_taken": [
+    "删除 fusion - 副本/ 目录",
+    "删除 FMA/results/ 并将 FMA/results(1)/ 重命名为 FMA/results/",
+    "重命名 FMA/enron_backup.py -> FMA/enron_with_fusion_output.py",
+    "重命名 LVIA/LVIA_backup.py -> LVIA/LVIA_with_fusion_output.py",
+    "重命名 PVIA_Enron/enron_partial_1000_backup.py -> PVIA_Enron/enron_partial_1000_with_fusion_output.py",
+    "创建 Archive/ 并归档 LVIA/Untitled.md, preprocess/*.md, fusion/PVIA.txt, PVIA_Enron/test.py, PVIA_Lucene/test/",
+    "新增 requirements.txt",
+    "更新 README.md（英文版）",
+    "修复 FMA/process_dict.py 路径为 __file__-based",
+    "重写 FMA/enron.py：合并原版+fusion输出，__file__路径，参数化fusion JSON，txt输出",
+    "增强 FMA/lucene.py：__file__路径，txt输出，无fusion JSON",
+    "重命名 fusion/input/fma_candidates.json -> fma_candidates_nkw500_query5000_month6_del05.json",
+    "重命名 fusion/input/ground_truth.json -> ground_truth_nkw500_query5000_month6_del05.json",
+    "归档 FMA/enron_with_fusion_output.py -> Archive/FMA/enron_with_fusion_output.py",
+    "更新 fusion/weighted_fusion.py 注释（仅注释，未改逻辑）",
+    "更新 README.md 为中文版本",
+    "修正 README.md 错别字：候选举果 -> 候选结果",
+    "新增 datasets/README.md 数据说明文档",
+    "新增 PVIA_Enron/enron_partial.py 统一脚本",
+    "新增 PVIA_Lucene/lucene_partial.py 统一脚本",
+    "归档5个 PVIA_Enron 旧参数脚本到 Archive/PVIA_Enron/",
+    "归档4个 PVIA_Lucene 旧参数脚本到 Archive/PVIA_Lucene/"
+  ],
+  "files_modified": [
+    "FMA/enron.py",
+    "FMA/lucene.py",
+    "FMA/process_dict.py",
+    "fusion/weighted_fusion.py（仅注释）",
+    "README.md"
+  ],
+  "files_created": [
+    "requirements.txt",
+    "datasets/README.md",
+    "PVIA_Enron/enron_partial.py",
+    "PVIA_Lucene/lucene_partial.py",
+    "conversation_export/project_cleanup_conversation.json",
+    "conversation_export/project_cleanup_conversation.txt",
+    "conversation_export/project_cleanup_conversation.md"
+  ],
+  "files_archived": [
+    "Archive/LVIA/Untitled.md",
+    "Archive/preprocess/pro_data_alt.md",
+    "Archive/preprocess/process_dataset.md",
+    "Archive/fusion/PVIA.txt",
+    "Archive/PVIA_Enron/test.py",
+    "Archive/PVIA_Lucene/test/",
+    "Archive/FMA/enron_with_fusion_output.py",
+    "Archive/PVIA_Enron/enron_partial_500.py",
+    "Archive/PVIA_Enron/enron_partial_1000.py",
+    "Archive/PVIA_Enron/enron_partial_2000.py",
+    "Archive/PVIA_Enron/enron_partial_3000.py",
+    "Archive/PVIA_Enron/enron_partial_5000.py",
+    "Archive/PVIA_Lucene/lucene_partial_500.py",
+    "Archive/PVIA_Lucene/lucene_partial_1000.py",
+    "Archive/PVIA_Lucene/lucene_partial_2000.py",
+    "Archive/PVIA_Lucene/lucene_partial_3000.py"
+  ],
+  "files_renamed": [
+    "FMA/enron_backup.py -> FMA/enron_with_fusion_output.py (later archived)",
+    "LVIA/LVIA_backup.py -> LVIA/LVIA_with_fusion_output.py",
+    "PVIA_Enron/enron_partial_1000_backup.py -> PVIA_Enron/enron_partial_1000_with_fusion_output.py",
+    "FMA/results(1)/ -> FMA/results/",
+    "fusion/input/fma_candidates.json -> fma_candidates_nkw500_query5000_month6_del05.json",
+    "fusion/input/ground_truth.json -> ground_truth_nkw500_query5000_month6_del05.json"
+  ],
+  "files_deleted": [
+    "fusion - 副本/（整个目录直接删除，非归档）",
+    "FMA/results/（旧版，替换为results(1)改名）"
+  ],
+  "pending_items": [
+    "LVIA路径修复：LVIA/LVIA.py和LVIA_with_fusion_output.py仍使用部分相对路径",
+    "PVIA路径修复：PVIA脚本仍使用相对路径读取edb/partial/",
+    "utils.py去重：preprocess/PVIA_Enron/PVIA_Lucene三个utils.py内容相同",
+    "datasets/_dict/目录评估：确认是否确实无代码依赖后决定是否归档",
+    "datasets/命名统一：月份补零、YYYY_M和YYYYM命名统一",
+    "datasets/根目录散文件归档：9个散文件可归入子目录",
+    "FMA/enron.py和lucene.py是否需要合并为统一脚本（当前决定保持独立）",
+    "PVIA fusion脚本后续处理：enron_partial_1000_with_fusion_output.py",
+    "preprocess/process_dataset.py和pro_data_alt.py是否需要合并",
+    "fusion/weighted_fusion.py后续改造：支持直接选择参数化JSON文件",
+    "数据完整性校验脚本：新增scripts/check_datasets.py",
+    "新增__init__.py：如果希望将各模块作为Python包导入"
+  ],
+  "notes": "本次会话围绕项目文件结构整理进行，按用户要求逐步处理了全局整理、FMA模块合并、README中文化、datasets/分析、PVIA模块合并。所有修改遵循先分析后方案再确认后执行的原则。核心原则：尽量少改动、结构更清晰、不破坏功能、不修改数据文件。"
+}

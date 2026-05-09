@@ -8,15 +8,9 @@ from process_dict import get_size_frompkl, delete_get_size_frompkl
 
 np.set_printoptions(suppress=True)
 
-BASE_DIR = Path(__file__).resolve().parent
-PROJECT_ROOT = BASE_DIR.parent
-RESULTS_DIR = BASE_DIR / "results"
-FUSION_INPUT_DIR = PROJECT_ROOT / "fusion" / "input"
-DATASETS_DIR = PROJECT_ROOT / "datasets"
-
 
 def load_sent_mail_contents(dataset_name, year=1999, month=1):
-    pro_dataset_path = DATASETS_DIR / str(dataset_name) / (str(year) + "_" + str(month) + ".pkl")
+    pro_dataset_path = "./datasets/" + str(dataset_name) + str(year) + "_" + str(month) + ".pkl"
     if not os.path.exists(pro_dataset_path):
         raise ValueError("The file {} does not exist".format(pro_dataset_path))
 
@@ -27,7 +21,7 @@ def load_sent_mail_contents(dataset_name, year=1999, month=1):
 
 
 def load_stem_trends(dataset_name, nkw):
-    pro_dataset_path = DATASETS_DIR / "trends" / (str(dataset_name) + "_trends_" + str(nkw) + ".pkl")
+    pro_dataset_path = "./datasets/trends/" + str(dataset_name) + "_trends_" + str(nkw) + ".pkl"
     if not os.path.exists(pro_dataset_path):
         raise ValueError("The file {} does not exist".format(pro_dataset_path))
 
@@ -271,23 +265,15 @@ def static_enron_data_info(dataset_name, nkw, trend_norm, n_month, query_number,
                 if kv4[0] == k3:
                     ex_value += kv4[1]
 
-    return ex_value, new_candidate, ttc, id_to_word
 
-
-def format_delete_rate(delete_rate):
-    return f"del{int(round(delete_rate * 100)):02d}"
-
-
-def build_run_tag(nkw, query_number, n_month, delete_rate):
-    delete_tag = format_delete_rate(delete_rate)
-    return f"nkw{nkw}_query{query_number}_month{n_month}_{delete_tag}"
-
-
-def save_fusion_outputs(new_candidate, ttc, id_to_word, run_tag):
-    fma_scores = {}
+    fma_scores = {}####
     ground_truth = {}
 
     for query_id, candidate_set in new_candidate.items():
+
+        # FMA 中有些 query_id 可能是 k1 + 3000 这样的新编号，
+        # 所以不能直接把 query_id 当作真实关键词编号。
+        # ttc[query_id] 里保存了这个查询类最初对应的真实关键词编号。
         if query_id in ttc and len(ttc[query_id]) > 0:
             true_keyword_id = ttc[query_id][0][0]
         else:
@@ -308,6 +294,7 @@ def save_fusion_outputs(new_candidate, ttc, id_to_word, run_tag):
 
             candidate_keyword = id_to_word[candidate_keyword_id]
 
+            # 候选集合越小，置信度越高。
             if len(candidate_set) == 0:
                 score = 0.0
             else:
@@ -315,10 +302,11 @@ def save_fusion_outputs(new_candidate, ttc, id_to_word, run_tag):
 
             fma_scores[query_name][candidate_keyword] = float(score)
 
-    FUSION_INPUT_DIR.mkdir(parents=True, exist_ok=True)
+    fusion_input_dir = Path("fusion") / "input"
+    fusion_input_dir.mkdir(parents=True, exist_ok=True)
 
-    fma_output_path = FUSION_INPUT_DIR / f"fma_candidates_{run_tag}.json"
-    truth_output_path = FUSION_INPUT_DIR / f"ground_truth_{run_tag}.json"
+    fma_output_path = fusion_input_dir / "fma_candidates.json"
+    truth_output_path = fusion_input_dir / "ground_truth.json"
 
     with open(fma_output_path, "w", encoding="utf-8") as f:
         json.dump(fma_scores, f, ensure_ascii=False, indent=2)
@@ -327,35 +315,25 @@ def save_fusion_outputs(new_candidate, ttc, id_to_word, run_tag):
         json.dump(ground_truth, f, ensure_ascii=False, indent=2)
 
     print("FMA candidates saved to:", fma_output_path)
-    print("Ground truth saved to:", truth_output_path)
+    print("Ground truth saved to:", truth_output_path)#####
 
+    print("correct query", ex_value)
+    return ex_value
 
-def save_txt_result_lines(filepath, lines):
-    with open(filepath, "a", encoding="utf-8") as f:
-        for line in lines:
-            f.write(line + "\n")
 
 
 if __name__ == "__main__":
-    dataset_name = "enron-full"
-    delete_rate = 0.2
+    repeat_cnt = 1
 
-    delete_rate_str = str(int(delete_rate * 100)).zfill(2)
-    result_filename = f"enron_delete_{delete_rate_str}.txt"
-
-    RESULTS_DIR.mkdir(parents=True, exist_ok=True)
-    result_path = RESULTS_DIR / result_filename
-    result_path.write_text("", encoding="utf-8")
-
-    nkw_list = [500, 1000, 2000, 3000]
-    query_list = [5000, 10000, 15000, 20000]
-    query_month = [6, 12, 18, 24]
+    nkw_list = [500]
+    query_list = [5000]
+    query_month = [6]
 
     for nkw in nkw_list:
         for query_number in query_list:
             for n_month in query_month:
                 parameter_dict = {
-                    "dataset": dataset_name,
+                    "dataset": "enron-full",
                     "nkw": nkw,
                     "query_number_dist": "poiss",
                     "query_params": 24 * query_number / n_month,
@@ -364,35 +342,20 @@ if __name__ == "__main__":
 
                 trend_norm = run_single_experiment(parameter_dict)
 
-                ex_value, new_candidate, ttc, id_to_word = static_enron_data_info(
-                    dataset_name,
+                ans = static_enron_data_info(
+                    "enron-full",
                     nkw,
                     trend_norm,
                     n_month,
                     query_number,
-                    delete_rate
+                    delete_rate=0.05 #[0, 0.05, 0.1, 0.15, 0.2]
                 )
 
-                accuracy = ex_value * 1.0 / (24 * query_number)
-
-                result_lines = [
-                    f"correct query {ex_value}",
-                    f"dataset name: enron",
-                    f"nkw: {nkw} query_number: {n_month} * {24 * query_number / n_month} month: {n_month} delete_rate = {delete_rate:.2f}",
-                    f"average accuracy: {accuracy}"
-                ]
-
-                save_txt_result_lines(result_path, result_lines)
-
-                print("correct query", ex_value)
                 print("dataset name: enron")
                 print(
                     "nkw:", nkw,
                     "query_number:", n_month, "*", 24 * query_number / n_month,
                     "month:", n_month,
-                    f"delete_rate = {delete_rate:.2f}"
+                    "delete_rate = 0.05"
                 )
-                print("average accuracy:", accuracy)
-
-                run_tag = build_run_tag(nkw, query_number, n_month, delete_rate)
-                save_fusion_outputs(new_candidate, ttc, id_to_word, run_tag)
+                print("average accuracy: ", ans * 1.0 / (24 * query_number))

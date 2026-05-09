@@ -1,0 +1,7 @@
+Weighted Fusion and Conflict Arbitration Results
+==================================================
+Correct queries: 410
+Total queries: 427
+Fusion accuracy: 0.9602
+Conflict count before arbitration: 45
+Conflict count after arbitration: 0

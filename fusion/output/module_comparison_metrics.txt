@@ -1,0 +1,7 @@
+Module Comparison Results
+====================================================================================================
+Method	Covered	Top1 Correct	Top1 Accuracy Total	Top1 Accuracy Covered	Contains True	Contains True Rate	Avg Candidate Size	Conflict Count
+FMA	427	267	62.53%	62.53%	427	100.00%	10.20	160
+PVIA	416	416	97.42%	100.00%	416	100.00%	118.94	3
+LVIA	419	12	2.81%	2.86%	311	74.22%	125.25	468
+Fusion	426	410	96.02%	96.24%	-	-	-	0

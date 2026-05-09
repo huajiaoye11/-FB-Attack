@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mv \"FMA/enron_backup.py\" \"FMA/enron_with_fusion_output.py\")",
+      "Bash(mv \"LVIA/LVIA_backup.py\" \"LVIA/LVIA_with_fusion_output.py\")",
+      "Bash(mv \"PVIA_Enron/enron_partial_1000_backup.py\" \"PVIA_Enron/enron_partial_1000_with_fusion_output.py\")"
+    ]
+  }
+}

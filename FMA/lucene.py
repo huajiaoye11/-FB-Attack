@@ -1,14 +1,20 @@
 import os
 import pickle
+from pathlib import Path
 import numpy as np
 
 from process_dict import get_size_frompkl, delete_get_size_frompkl
 
 np.set_printoptions(suppress=True)
 
+BASE_DIR = Path(__file__).resolve().parent
+PROJECT_ROOT = BASE_DIR.parent
+RESULTS_DIR = BASE_DIR / "results"
+DATASETS_DIR = PROJECT_ROOT / "datasets"
+
 
 def load_sent_mail_contents(dataset_name, year=1999, month=1):
-    pro_dataset_path = "./datasets/" + str(dataset_name) + str(year) + "_" + str(month) + ".pkl"
+    pro_dataset_path = DATASETS_DIR / str(dataset_name) / (str(year) + "_" + str(month) + ".pkl")
     if not os.path.exists(pro_dataset_path):
         raise ValueError("The file {} does not exist".format(pro_dataset_path))
 
@@ -19,7 +25,7 @@ def load_sent_mail_contents(dataset_name, year=1999, month=1):
 
 
 def load_stem_trends(dataset_name, nkw):
-    pro_dataset_path = "./datasets/trends/" + str(dataset_name) + "_trends_" + str(nkw) + ".pkl"
+    pro_dataset_path = DATASETS_DIR / "trends" / (str(dataset_name) + "_trends_" + str(nkw) + ".pkl")
     if not os.path.exists(pro_dataset_path):
         raise ValueError("The file {} does not exist".format(pro_dataset_path))
 
@@ -268,8 +274,22 @@ def static_enron_data_info(dataset_name, nkw, trend_norm, n_month, query_number,
     return ex_value
 
 
+def save_txt_result_lines(filepath, lines):
+    with open(filepath, "a", encoding="utf-8") as f:
+        for line in lines:
+            f.write(line + "\n")
+
+
 if __name__ == "__main__":
-    repeat_cnt = 1
+    dataset_name = "lucene"
+    delete_rate = 0.00
+
+    delete_rate_str = str(int(delete_rate * 100)).zfill(2)
+    result_filename = f"lucene_delete_{delete_rate_str}.txt"
+
+    RESULTS_DIR.mkdir(parents=True, exist_ok=True)
+    result_path = RESULTS_DIR / result_filename
+    result_path.write_text("", encoding="utf-8")
 
     nkw_list = [500, 1000, 2000, 3000]
     query_list = [5000, 10000, 15000, 20000]
@@ -279,7 +299,7 @@ if __name__ == "__main__":
         for query_number in query_list:
             for n_month in query_month:
                 parameter_dict = {
-                    "dataset": "lucene",
+                    "dataset": dataset_name,
                     "nkw": nkw,
                     "query_number_dist": "poiss",
                     "query_params": 24 * query_number / n_month,
@@ -289,19 +309,31 @@ if __name__ == "__main__":
                 trend_norm = run_single_experiment(parameter_dict)
 
                 ans = static_enron_data_info(
-                    "lucene",
+                    dataset_name,
                     nkw,
                     trend_norm,
                     n_month,
                     query_number,
-                    delete_rate=0.00
+                    delete_rate
                 )
 
+                accuracy = ans * 1.0 / (24 * query_number)
+
+                result_lines = [
+                    f"correct query {ans}",
+                    f"dataset name: lucene",
+                    f"nkw: {nkw} query_number: {n_month} * {24 * query_number / n_month} month: {n_month} delete_rate = {delete_rate:.2f}",
+                    f"average accuracy: {accuracy}"
+                ]
+
+                save_txt_result_lines(result_path, result_lines)
+
+                print("correct query", ans)
                 print("dataset name: lucene")
                 print(
                     "nkw:", nkw,
                     "query_number:", n_month, "*", 24 * query_number / n_month,
                     "month:", n_month,
-                    "delete_rate = 0.00"
+                    f"delete_rate = {delete_rate:.2f}"
                 )
-                print("average accuracy: ", ans * 1.0 / (24 * query_number))
+                print("average accuracy:", accuracy)

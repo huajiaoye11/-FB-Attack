@@ -1,0 +1,312 @@
+# FB-Attack 项目整理会话记录
+# 导出时间: 2026-05-09
+
+================================================================================
+1. 初始项目分析与整理要求
+================================================================================
+
+[用户]
+要求分析项目结构，发现项目是DSSE泄露滥用攻击研究（CCS 2023论文），包含FMA/LVIA/PVIA/fusion/preprocess模块。
+要求按以下流程处理：
+- 第一步：全面扫描项目结构
+- 第二步：给出整理方案
+- 第三步：谨慎执行修改（先移到archive_unused/）
+- 第四步：保持功能不被破坏
+- 第五步：输出总结
+
+[助手]
+分析了完整项目结构：
+- preprocess/: 数据预处理
+- FMA/: 频率匹配攻击（enron.py, lucene.py, enron_backup.py, process_dict.py）
+- LVIA/: 长度-体积信息攻击（LVIA.py, LVIA_backup.py）
+- PVIA_Enron/: 部分体积信息攻击-Enron（enron_partial_500~5000.py, _backup.py）
+- PVIA_Lucene/: 部分体积信息攻击-Lucene（lucene_partial_500~3000.py）
+- fusion/: 融合模块（weighted_fusion.py, evaluate_modules.py, check_ground_truth.py）
+- fusion - 副本/: fusion的重复目录
+- datasets/: 处理后的数据集
+
+识别问题：
+1. _backup.py实际是增强版（含fusion输出），不是备份
+2. fusion - 副本/ 完全重复
+3. FMA/results(1)/ 与 results/ 重复
+4. PVIA参数脚本高度重复（仅word_size不同）
+5. 三个完全相同的utils.py
+6. LVIA/Untitled.md等非代码文件散落
+7. 缺少requirements.txt和__init__.py
+
+================================================================================
+2. 第一轮整理：全局文件结构整理
+================================================================================
+
+[用户]
+详细规定了处理范围：
+- 直接删除 fusion - 副本/
+- FMA/results(1)/ 重命名为 FMA/results/，旧 FMA/results/ 删除
+- _backup.py 重命名为 _with_fusion_output.py（保留原版）
+- 归档 LVIA/Untitled.md, preprocess/*.md, fusion/PVIA.txt, PVIA_Enron/test.py, PVIA_Lucene/test/
+- 新增 requirements.txt
+- 更新 README
+- 明确禁止处理：datasets/、PVIA参数脚本合并、FMA脚本合并、预处理脚本合并、utils.py合并、__init__.py
+
+[助手]
+执行结果：
+- 删除 fusion - 副本/
+- 删除 FMA/results/，FMA/results(1)/ -> FMA/results/
+- 重命名三个 _backup.py -> _with_fusion_output.py
+- 创建 Archive/ 保持原目录结构归档6项
+- 新增 requirements.txt（numpy, pandas, nltk, pytrends, gtab, tqdm）
+- 更新 README（英文版）：目录结构、模块说明、安装、使用方式、注意事项
+
+验证：全部12项检查通过
+
+================================================================================
+3. FMA 模块合并
+================================================================================
+
+[用户]
+分多轮逐步推进 FMA 模块整理：
+
+第一轮：要求修复路径问题
+- 不仅输出路径用__file__，读取datasets/路径也要用PROJECT_ROOT
+- 不要擅自扩大delete_rate扫描范围
+- .txt输出格式必须严格匹配已有results文件
+- 确认原始数据路径拼接是否正确（datasets/enron-full/1999_1.pkl）
+- 暂时只给出enron.py的修正方案，不要修改其他文件
+
+[助手]
+确认了真实数据集路径：
+- datasets/enron-full/1999_1.pkl（子目录结构）
+- datasets/trends/enron-full_trends_500.pkl（扁平结构）
+
+确认了已有.txt格式（4行一个block，无空行，average accuracy后一个空格）
+确认了process_dict.py也需要修路径
+
+[用户]
+允许修改process_dict.py（仅修路径），要求：
+- .txt输出不重复追加（运行前清空目标文件）
+- 暂时只写入enron.py和process_dict.py
+- 写入后做语法检查
+
+[助手]
+修改 process_dict.py：新增Path常量和DATASETS_DIR，修复三处路径
+重写 enron.py：__file__路径，txt输出，fusion JSON参数化输出，保持原始参数
+语法检查通过
+
+[用户]
+继续处理剩余任务：
+- FMA/lucene.py：只加txt输出，不加fusion JSON
+- 重命名fusion/input/中已有FMA JSON
+- 归档enron_with_fusion_output.py
+- 更新weighted_fusion.py注释
+- 更新README
+
+[助手]
+展示 lucene.py 修改计划后确认写入：
+- 路径修复，txt输出到 FMA/results/lucene_delete_00.txt
+- 无fusion JSON（无json import，无FUSION_INPUT_DIR）
+
+确认enron_with_fusion_output.py参数：nkw=500, query=5000, month=6, delete_rate=0.05
+
+重命名：
+- fma_candidates.json -> fma_candidates_nkw500_query5000_month6_del05.json
+- ground_truth.json -> ground_truth_nkw500_query5000_month6_del05.json
+
+归档：FMA/enron_with_fusion_output.py -> Archive/FMA/enron_with_fusion_output.py
+
+更新 fusion/weighted_fusion.py：
+- load_json()函数添加docstring说明参数化文件名
+- main()函数上方添加注释说明
+
+更新 README：
+- 目录结构移除enron_with_fusion_output.py
+- FMA模块说明更新
+- Fusion模块说明新增参数化JSON命名和兼容性说明
+- Usage移除旧命令，新增fusion前的文件准备步骤
+- Notes新增FMA merge、参数化命名、fusion兼容性说明
+
+================================================================================
+4. README 中文化
+================================================================================
+
+[用户]
+要求将README.md改写为中文版本，只修改README.md，保留所有信息，代码/路径/命令保持英文。
+
+[助手]
+将README.md完全改写为中文，包含：
+- 中文标题和论文引用
+- 各模块中文说明
+- 安装和使用方式
+- 11条注意事项
+- 数据集来源
+
+[用户]
+修正错别字：候选举果 -> 候选结果
+
+================================================================================
+5. datasets/ 分析与文档
+================================================================================
+
+[用户]
+要求分析datasets/目录但不修改任何文件。
+
+[助手]
+扫描结果：
+- enron-full/: 48个.pkl，tuple(docs, dates, lengths)，命名YYYY_M.pkl，1999-01~2002-12
+- enron-full_dict/: 48个.pkl，dict{keyword: {size, length}}，命名YYYYM.pkl，无下划线
+- lucene/: 132个.pkl，同enron-full结构，2002-01~2012-12
+- lucene_dict/: 132个.pkl，同enron-full_dict结构
+- trends/: 10个.pkl，命名{dataset}_trends_{nkw}.pkl，tuple(stems_list, ndarray(nkw,72))
+- 根目录9个散文件（stems_to_words, stems_trends等）
+
+抽样.pkl文件：
+- enron-full/2000_1.pkl: 3个list，1108条文档
+- enron-full_dict/20011.pkl: dict 3000个key，value为{size: int, length: [int]}
+- trends/enron-full_trends_500.pkl: (500个stem, ndarray(500,72) float64)
+
+代码依赖分析：
+- FMA: __file__-based（已修复）
+- LVIA: 部分修复（混用os.path.join和相对路径）
+- PVIA: 不读取datasets/，使用自己的edb/partial/ JSON数据
+- preprocess: 写入datasets_mon/和datasets_mon_alter/（不是datasets/）
+
+已知问题：
+1. enron-full/和lucene/用YYYY_M.pkl，_dict/用YYYYM.pkl，命名不统一
+2. 月份不补零（1999_10 < 1999_2 在字符串排序中）
+3. _dict/目录无代码读取
+4. 根目录散文件命名不规范（enron-fullstems_trends.pkl缺分隔符）
+5. LVIA路径未完全修复
+
+建议四阶段改进：
+阶段1：补充说明文档（零风险）
+阶段2：增加校验工具（低风险，不改数据）
+阶段3：统一路径配置（中风险，改代码不改数据）
+阶段4：重命名数据文件（高风险，远期建议）
+
+[用户]
+确认分析报告，要求新增datasets/README.md。
+
+[助手]
+新增datasets/README.md（148行），包含完整的数据目录说明。
+
+================================================================================
+6. PVIA 模块合并
+================================================================================
+
+[用户]
+要求合并PVIA参数脚本，先分析差异再给方案。
+
+[助手]
+差异分析：
+- enron_partial_500/1000/2000/3000.py: 仅word_size不同，代码完全一致(~130行)
+- enron_partial_5000.py: 代码结构明显不同(244行)，有倒排索引优化、增强解码
+- lucene_partial_500/1000/2000/3000.py: 仅word_size不同，代码完全一致(~137行)
+
+已有结果文件格式：
+- enron_500.txt等，每行格式: "{frac1} {frac2} containing unique result {count}"
+- tqdm进度条为控制台输出，不作为稳定写入格式
+
+方案建议：
+- 以1000版本为基础（用户明确要求不用5000版优化）
+- 新增WORD_SIZE配置变量
+- 使用__file__路径
+- 新增txt输出（不含tqdm），文件名含word_size
+- 归档9个旧参数脚本
+- 不处理fusion脚本
+
+[用户]
+确认方案，要求执行。
+
+[助手]
+新增 PVIA_Enron/enron_partial.py：
+- WORD_SIZE=1000, SUPPORTED_WORD_SIZES=[500,1000,2000,3000,5000]
+- __file__路径，txt输出到 enron_partial_{WORD_SIZE}.txt
+- 基于1000版本代码结构
+
+新增 PVIA_Lucene/lucene_partial.py：
+- WORD_SIZE=1000, SUPPORTED_WORD_SIZES=[500,1000,2000,3000]
+- __file__路径，txt输出到 lucene_partial_{WORD_SIZE}.txt
+- 基于1000版本代码结构
+
+归档9个旧脚本到Archive/：
+- Archive/PVIA_Enron/enron_partial_{500,1000,2000,3000,5000}.py
+- Archive/PVIA_Lucene/lucene_partial_{500,1000,2000,3000}.py
+
+未处理：PVIA_Enron/enron_partial_1000_with_fusion_output.py（保留原位）
+
+验证：语法检查通过，无fusion引用，未修改data/fusion/FMA/LVIA/preprocess
+
+================================================================================
+7. 当前项目状态总表
+================================================================================
+
+已修改文件：
+  FMA/enron.py - 合并版Enron主脚本（txt+fusion JSON）
+  FMA/lucene.py - Lucene主脚本（txt only）
+  FMA/process_dict.py - 路径修复
+  fusion/weighted_fusion.py - 注释更新（仅注释）
+  README.md - 中文版
+
+已新增文件：
+  requirements.txt
+  datasets/README.md
+  PVIA_Enron/enron_partial.py
+  PVIA_Lucene/lucene_partial.py
+
+已重命名文件/目录：
+  FMA/results(1)/ -> FMA/results/
+  FMA/enron_backup.py -> _with_fusion_output.py（后归档）
+  LVIA/LVIA_backup.py -> LVIA_with_fusion_output.py
+  PVIA_Enron/enron_partial_1000_backup.py -> _with_fusion_output.py
+  fusion/input/fma_candidates.json -> fma_candidates_nkw500_query5000_month6_del05.json
+  fusion/input/ground_truth.json -> ground_truth_nkw500_query5000_month6_del05.json
+
+已归档文件（Archive/）：
+  Archive/LVIA/Untitled.md
+  Archive/preprocess/pro_data_alt.md
+  Archive/preprocess/process_dataset.md
+  Archive/fusion/PVIA.txt
+  Archive/PVIA_Enron/test.py
+  Archive/PVIA_Lucene/test/
+  Archive/FMA/enron_with_fusion_output.py
+  Archive/PVIA_Enron/enron_partial_500.py ~ 5000.py
+  Archive/PVIA_Lucene/lucene_partial_500.py ~ 3000.py
+
+已删除：
+  fusion - 副本/（直接删除）
+  FMA/results/（旧版，被results(1)替换）
+
+================================================================================
+8. 后续待处理事项
+================================================================================
+
+1. LVIA路径修复：LVIA.py和LVIA_with_fusion_output.py仍使用部分相对路径
+2. PVIA路径修复：edb/partial/读取路径仍为相对路径
+3. utils.py去重：三个相同utils.py可合并
+4. datasets/_dict/评估：确认无依赖后可归档
+5. datasets/命名统一：月份补零、YYYY_M和YYYYM命名统一
+6. datasets/散文件归档：根目录9个.pkl归入子目录
+7. FMA enron.py和lucene.py是否合并（当前决定保持独立）
+8. PVIA fusion脚本后续处理
+9. preprocess脚本是否合并
+10. fusion/weighted_fusion.py支持直接选择参数化JSON
+11. 新增数据完整性校验脚本
+12. 新增__init__.py（按需）
+
+================================================================================
+9. 明确禁止处理的内容（本次会话中确认）
+================================================================================
+
+- 不修改datasets/中任何.pkl数据文件
+- 不合并FMA的enron.py和lucene.py
+- 不合并preprocess/中的process_dataset.py和pro_data_alt.py
+- 不合并三个重复的utils.py
+- 不新增、删除或修改__init__.py
+- 不修改fusion核心逻辑（仅允许修改注释）
+- 不修改PVIA fusion脚本（enron_partial_1000_with_fusion_output.py）
+- PVIA合并不使用5000版优化重构
+- 不执行完整耗时实验
+- 不删除任何文件（仅fusion - 副本/ 和旧FMA/results/ 除外）
+
+================================================================================
+结束
+================================================================================
